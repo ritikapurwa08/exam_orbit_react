@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>ExamOrbit - Organic Chemistry Topics</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="flex min-h-screen">
+<!-- Sidebar -->
+<aside class="fixed inset-y-0 left-0 w-64 bg-white dark:bg-background-dark border-r border-slate-200 dark:border-slate-800 z-50">
+<div class="flex h-full flex-col p-4">
+<div class="flex items-center gap-3 mb-8 px-2">
+<div class="bg-primary rounded-lg size-10 flex items-center justify-center text-white">
+<span class="material-symbols-outlined">orbit</span>
+</div>
+<div>
+<h1 class="text-slate-900 dark:text-white text-base font-bold leading-none">ExamOrbit</h1>
+<p class="text-slate-500 text-xs mt-1">Chemistry Student</p>
+</div>
+</div>
+<nav class="flex flex-col gap-1 grow">
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 bg-primary text-white rounded-lg" href="#">
+<span class="material-symbols-outlined">book_2</span>
+<span class="text-sm font-medium">Subjects</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">edit_note</span>
+<span class="text-sm font-medium">Practice</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">layers</span>
+<span class="text-sm font-medium">Mock Tests</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-sm font-medium">Profile</span>
+</a>
+</nav>
+<div class="mt-auto pt-4 border-t border-slate-200 dark:border-slate-800">
+<div class="flex items-center gap-3 px-2">
+<div class="size-8 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+<img alt="User Avatar" data-alt="User profile avatar icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDml4WsdlTHcoyXhME34De6d5nKKEfwGruxvvcbcycWlG4ZNv_l5PLbSBeDzcwLXH7bX6C-1PRENJ04gkuSNEkxNpF1LpTLL2vx6vuspeLLgtS9VDcRKaZNviCvBND8jt9oRlxaYYWSY1-tsbNw20e7XG_xRQaB1WfFYDrBK6e6GxHCThSvifx1hwK8H3zPcHnK59X6gT13VuW2rr92FU-JO7kV3jjuTwQ4NnngmD29WrUOZkN_EdqkfetSZudeH-5ymhv9OcZ2nXg"/>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-semibold truncate">Alex Johnson</p>
+<p class="text-xs text-slate-500 truncate">Premium Member</p>
+</div>
+<span class="material-symbols-outlined text-slate-400">logout</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="ml-64 flex-1 flex flex-col md:flex-row p-8 gap-8">
+<!-- Left Column (30%) -->
+<div class="w-full md:w-[30%] flex flex-col gap-8">
+<!-- Subject Header & Progress -->
+<div class="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="mb-6">
+<a class="text-xs font-bold text-primary dark:text-slate-400 uppercase tracking-widest mb-2 block" href="#">Chemistry</a>
+<h2 class="text-3xl font-black text-slate-900 dark:text-white tracking-tight">Organic Chemistry</h2>
+<p class="text-slate-500 text-sm mt-2 leading-relaxed">Master the structure, properties, and reactions of carbon-based compounds.</p>
+</div>
+<div class="flex items-center justify-center py-6">
+<div class="relative size-32">
+<svg class="size-full" viewbox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+<circle class="stroke-slate-100 dark:stroke-slate-800" cx="18" cy="18" fill="none" r="16" stroke-width="3"></circle>
+<circle class="stroke-primary" cx="18" cy="18" fill="none" r="16" stroke-dasharray="100" stroke-dashoffset="35" stroke-linecap="round" stroke-width="3"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<span class="text-2xl font-bold text-slate-900 dark:text-white leading-none">65%</span>
+<span class="text-[10px] font-medium text-slate-500 uppercase mt-1">Complete</span>
+</div>
+</div>
+</div>
+<button class="w-full py-2.5 bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white text-xs font-bold rounded-lg transition-all hover:bg-slate-200 dark:hover:bg-slate-700">
+                        View Syllabus
+                    </button>
+</div>
+<!-- Reference Materials -->
+<div class="flex flex-col gap-4">
+<h3 class="text-lg font-bold text-slate-900 dark:text-white px-1">Reference Materials</h3>
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 group hover:border-primary transition-all cursor-pointer">
+<div class="flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 size-12 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-semibold text-slate-900 dark:text-white truncate">Nomenclature Guide.pdf</p>
+<p class="text-xs text-slate-500">1.2 MB • PDF</p>
+</div>
+<span class="material-symbols-outlined text-slate-400">download</span>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 group hover:border-primary transition-all cursor-pointer">
+<div class="flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 size-12 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">description</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-semibold text-slate-900 dark:text-white truncate">Functional Groups Cheat Sheet</p>
+<p class="text-xs text-slate-500">850 KB • PDF</p>
+</div>
+<span class="material-symbols-outlined text-slate-400">download</span>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 group hover:border-primary transition-all cursor-pointer">
+<div class="flex items-center justify-center rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 size-12 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">movie</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="text-sm font-semibold text-slate-900 dark:text-white truncate">Reaction Mechanisms Video</p>
+<p class="text-xs text-slate-500">45 MB • MP4</p>
+</div>
+<span class="material-symbols-outlined text-slate-400">play_circle</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (70%) -->
+<div class="w-full md:w-[70%]">
+<div class="flex items-center justify-between mb-6 px-1">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white">Curriculum Topics</h3>
+<div class="flex gap-2">
+<button class="px-3 py-1.5 text-xs font-semibold bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg">All Topics</button>
+<button class="px-3 py-1.5 text-xs font-semibold text-slate-500 hover:text-slate-900 dark:hover:text-white">Incomplete</button>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<!-- TopicCard 1 -->
+<div class="bg-white dark:bg-background-dark p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 hover:shadow-md transition-shadow">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-3 mb-1">
+<h4 class="text-lg font-bold text-slate-900 dark:text-white truncate">Alkanes &amp; Alkenes</h4>
+<span class="bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Completed</span>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<div class="flex items-center gap-1.5 text-slate-500 text-sm font-medium">
+<span class="material-symbols-outlined text-base">quiz</span>
+                                    45 Questions
+                                </div>
+<div class="flex items-center gap-1.5 text-slate-500 text-sm font-medium">
+<span class="material-symbols-outlined text-base">history</span>
+                                    Last Attempt: <span class="text-slate-900 dark:text-white">85% — 2 days ago</span>
+</div>
+</div>
+</div>
+<button class="w-full sm:w-auto px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-lg hover:bg-slate-800 transition-colors">
+                            Practice Again
+                        </button>
+</div>
+<!-- TopicCard 2 -->
+<div class="bg-white dark:bg-background-dark p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 hover:shadow-md transition-shadow">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-3 mb-1">
+<h4 class="text-lg font-bold text-slate-900 dark:text-white truncate">Alcohol, Phenols &amp; Ethers</h4>
+<span class="bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">In Progress</span>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<div class="flex items-center gap-1.5 text-slate-500 text-sm font-medium">
+<span class="material-symbols-outlined text-base">quiz</span>
+                                    60 Questions
+                                </div>
+<div class="flex items-center gap-1.5 text-slate-500 text-sm font-medium">
+<span class="material-symbols-outlined text-base">history</span>
+                                    Last Attempt: <span class="text-slate-900 dark:text-white">42% — Yesterday</span>
+</div>
+</div>
+</div>
+<button class="w-full sm:w-auto px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-lg hover:bg-slate-800 transition-colors">
+                            Start Practice
+                        </button>
+</div>
+<!-- TopicCard 3 -->
+<div class="bg-white dark:bg-background-dark p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 hover:shadow-md transition-shadow">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-3 mb-1">
+<h4 class="text-lg font-bold text-slate-900 dark:text-white truncate">Aldehydes, Ketones &amp; Carboxylic Acids</h4>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<div class="flex items-center gap-1.5 text-slate-500 text-sm font-medium">
+<span class="material-symbols-outlined text-base">quiz</span>
+                                    75 Questions
+                                </div>
+<div class="flex items-center gap-1.5 text-slate-400 text-sm font-medium italic">
+                                    No attempts yet
+                                </div>
+</div>
+</div>
+<button class="w-full sm:w-auto px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-lg hover:bg-slate-800 transition-colors">
+                            Start Practice
+                        </button>
+</div>
+<!-- TopicCard 4 -->
+<div class="bg-white dark:bg-background-dark p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 hover:shadow-md transition-shadow opacity-90">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-3 mb-1">
+<h4 class="text-lg font-bold text-slate-900 dark:text-white truncate">Amines</h4>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<div class="flex items-center gap-1.5 text-slate-500 text-sm font-medium">
+<span class="material-symbols-outlined text-base">quiz</span>
+                                    35 Questions
+                                </div>
+<div class="flex items-center gap-1.5 text-slate-400 text-sm font-medium italic">
+                                    No attempts yet
+                                </div>
+</div>
+</div>
+<button class="w-full sm:w-auto px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-lg hover:bg-slate-800 transition-colors">
+                            Start Practice
+                        </button>
+</div>
+<!-- TopicCard 5 -->
+<div class="bg-white dark:bg-background-dark p-5 rounded-xl border border-slate-200 dark:border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 hover:shadow-md transition-shadow">
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-3 mb-1">
+<h4 class="text-lg font-bold text-slate-900 dark:text-white truncate">Biomolecules</h4>
+<span class="bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider">Completed</span>
+</div>
+<div class="flex flex-wrap items-center gap-4">
+<div class="flex items-center gap-1.5 text-slate-500 text-sm font-medium">
+<span class="material-symbols-outlined text-base">quiz</span>
+                                    50 Questions
+                                </div>
+<div class="flex items-center gap-1.5 text-slate-500 text-sm font-medium">
+<span class="material-symbols-outlined text-base">history</span>
+                                    Last Attempt: <span class="text-slate-900 dark:text-white">92% — 5 days ago</span>
+</div>
+</div>
+</div>
+<button class="w-full sm:w-auto px-6 py-2.5 bg-primary text-white text-sm font-bold rounded-lg hover:bg-slate-800 transition-colors">
+                            Practice Again
+                        </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ExamOrbit | Command Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 bg-white border-b border-slate-200 px-4 md:px-8">
+<div class="max-w-[1024px] mx-auto">
+<div class="flex items-center justify-between h-16">
+<!-- Left: Branding & Breadcrumbs -->
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<div class="size-6 bg-primary text-white flex items-center justify-center rounded">
+<span class="material-symbols-outlined text-sm">orbit</span>
+</div>
+<span class="font-bold text-lg tracking-tight">ExamOrbit</span>
+</div>
+<nav class="hidden md:flex items-center gap-2 text-sm text-slate-500">
+<span class="hover:text-primary cursor-pointer">Chemistry</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="font-medium text-slate-900">Thermodynamics</span>
+</nav>
+</div>
+<!-- Right: Timer & Action -->
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-3">
+<div class="flex flex-col items-center">
+<div class="flex gap-1">
+<span class="bg-slate-100 px-2 py-1 rounded text-lg font-bold">12</span>
+<span class="text-lg font-bold">:</span>
+<span class="bg-slate-100 px-2 py-1 rounded text-lg font-bold">45</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-slate-400">timer</span>
+</div>
+<button class="bg-slate-100 hover:bg-slate-200 text-slate-900 px-4 py-2 rounded-lg text-sm font-bold transition-colors">
+                        Finish Test
+                    </button>
+<div class="size-8 rounded-full bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="User profile circular avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyAaKZPa8I1jS2PVTdyr_GYgqZ5lqydY76rcIzANjBvHbZjzLP7nGc1aQ9j2EZ6ir9AklqL4YVdhf48OQF5N8pyokaA4HDAxgC-j5owW4CikLiqCu1JyZlSy6d8_Q4pbY9iZ3Dy8PDR1VRTJ4T3mzHB6n8opaU5bjvfG42zFN71XuHgfJGsp4T2hVbXrHrDDEdlqzHF5yBOJt1gOCKgAnOPlWTagDnzEY_nc-vCEwh19irRsZ5lT0wR-yI-AZKhCrMWlyrxV-EQko"/>
+</div>
+</div>
+</div>
+<!-- Thin Progress Bar -->
+<div class="h-1 w-full bg-slate-100 overflow-hidden mb-0">
+<div class="h-full bg-primary" style="width: 30%;"></div>
+</div>
+</div>
+</header>
+<main class="max-w-[1024px] mx-auto px-4 py-8 flex flex-col lg:flex-row gap-8">
+<!-- Main Question Area -->
+<div class="flex-1 space-y-6">
+<div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+<div class="flex justify-between items-start mb-6">
+<span class="text-xs font-bold uppercase tracking-widest text-slate-400">Question 15 of 50</span>
+<button class="flex items-center gap-2 text-slate-400 hover:text-amber-500 transition-colors">
+<span class="material-symbols-outlined text-sm">bookmark</span>
+<span class="text-xs font-bold">MARK FOR REVIEW</span>
+</button>
+</div>
+<div class="prose prose-slate max-w-none mb-8">
+<h2 class="text-xl font-semibold leading-relaxed text-slate-900">
+                        In a steady-state flow process, a gas undergoes an adiabatic expansion through a nozzle. If the initial enthalpy is 3200 kJ/kg and the final enthalpy is 2800 kJ/kg, what is the change in kinetic energy of the gas?
+                    </h2>
+</div>
+<!-- Option Buttons -->
+<div class="grid gap-3">
+<button class="group flex items-center justify-between w-full p-4 rounded-lg border-2 border-slate-100 hover:border-primary transition-all text-left">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded flex items-center justify-center bg-slate-50 border border-slate-200 font-bold text-sm group-hover:bg-primary group-hover:text-white transition-colors">A</span>
+<span class="text-slate-700 font-medium">400 kJ/kg</span>
+</div>
+<span class="text-[10px] font-bold text-slate-300 bg-slate-50 px-1.5 py-0.5 rounded border border-slate-100">[1]</span>
+</button>
+<button class="group flex items-center justify-between w-full p-4 rounded-lg border-2 border-primary bg-primary/5 transition-all text-left">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded flex items-center justify-center bg-primary text-white font-bold text-sm">B</span>
+<span class="text-slate-900 font-semibold">-400 kJ/kg</span>
+</div>
+<span class="text-[10px] font-bold text-primary/40 bg-white px-1.5 py-0.5 rounded border border-primary/20">[2]</span>
+</button>
+<button class="group flex items-center justify-between w-full p-4 rounded-lg border-2 border-slate-100 hover:border-primary transition-all text-left">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded flex items-center justify-center bg-slate-50 border border-slate-200 font-bold text-sm group-hover:bg-primary group-hover:text-white transition-colors">C</span>
+<span class="text-slate-700 font-medium">600 kJ/kg</span>
+</div>
+<span class="text-[10px] font-bold text-slate-300 bg-slate-50 px-1.5 py-0.5 rounded border border-slate-100">[3]</span>
+</button>
+<button class="group flex items-center justify-between w-full p-4 rounded-lg border-2 border-slate-100 hover:border-primary transition-all text-left">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded flex items-center justify-center bg-slate-50 border border-slate-200 font-bold text-sm group-hover:bg-primary group-hover:text-white transition-colors">D</span>
+<span class="text-slate-700 font-medium">800 kJ/kg</span>
+</div>
+<span class="text-[10px] font-bold text-slate-300 bg-slate-50 px-1.5 py-0.5 rounded border border-slate-100">[4]</span>
+</button>
+<button class="group flex items-center justify-between w-full p-4 rounded-lg border-2 border-slate-100 hover:border-primary transition-all text-left">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded flex items-center justify-center bg-slate-50 border border-slate-200 font-bold text-sm group-hover:bg-primary group-hover:text-white transition-colors">E</span>
+<span class="text-slate-700 font-medium">None of the above</span>
+</div>
+<span class="text-[10px] font-bold text-slate-300 bg-slate-50 px-1.5 py-0.5 rounded border border-slate-100">[5]</span>
+</button>
+</div>
+<div class="flex items-center justify-between mt-10 pt-6 border-t border-slate-100">
+<button class="flex items-center gap-2 text-slate-600 font-bold px-4 py-2 hover:bg-slate-50 rounded-lg transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+                        Previous
+                    </button>
+<div class="flex gap-4">
+<button class="text-slate-500 font-bold px-4 py-2 hover:text-primary transition-colors">Clear Selection</button>
+<button class="bg-primary text-white px-8 py-2 rounded-lg font-bold hover:opacity-90 transition-opacity flex items-center gap-2">
+                            Next Question
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Side: Navigation Panel -->
+<aside class="w-full lg:w-72 space-y-6">
+<div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm sticky top-24">
+<h3 class="font-bold text-sm mb-6 flex items-center justify-between">
+                    Question Overview
+                    <span class="text-[10px] bg-slate-100 px-2 py-0.5 rounded uppercase text-slate-500">50 Total</span>
+</h3>
+<div class="grid grid-cols-5 gap-2 max-h-[400px] overflow-y-auto custom-scrollbar pr-2">
+<!-- Numbers 1-50 -->
+<!-- Answered (Primary) -->
+<button class="aspect-square flex items-center justify-center rounded border border-primary bg-primary text-white text-xs font-bold">01</button>
+<button class="aspect-square flex items-center justify-center rounded border border-primary bg-primary text-white text-xs font-bold">02</button>
+<button class="aspect-square flex items-center justify-center rounded border border-primary bg-primary text-white text-xs font-bold">03</button>
+<!-- Unvisited (Outline) -->
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 hover:border-slate-400 text-slate-400 text-xs font-bold">04</button>
+<!-- Marked (Amber Dot) -->
+<button class="relative aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-900 text-xs font-bold">
+                        05
+                        <span class="absolute top-0.5 right-0.5 w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+</button>
+<!-- Generating more numbers for visual effect -->
+<button class="aspect-square flex items-center justify-center rounded border border-primary bg-primary text-white text-xs font-bold">06</button>
+<button class="aspect-square flex items-center justify-center rounded border border-primary bg-primary text-white text-xs font-bold">07</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">08</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">09</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">10</button>
+<button class="aspect-square flex items-center justify-center rounded border border-primary bg-primary text-white text-xs font-bold">11</button>
+<button class="aspect-square flex items-center justify-center rounded border border-primary bg-primary text-white text-xs font-bold">12</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">13</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">14</button>
+<button class="aspect-square flex items-center justify-center rounded border border-primary bg-slate-100 ring-2 ring-primary text-primary text-xs font-bold">15</button>
+<!-- Fillers -->
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">16</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">17</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">18</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">19</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">20</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">21</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">22</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">23</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">24</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">25</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">26</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">27</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">28</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">29</button>
+<button class="aspect-square flex items-center justify-center rounded border border-slate-200 text-slate-400 text-xs font-bold">30</button>
+<!-- Remaining 31-50 would go here -->
+</div>
+<!-- Legend -->
+<div class="mt-8 pt-6 border-t border-slate-100 space-y-3">
+<div class="flex items-center gap-3 text-xs font-medium text-slate-600">
+<div class="size-3 bg-primary rounded"></div>
+<span>Answered</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-slate-600">
+<div class="size-3 border border-slate-200 rounded"></div>
+<span>Unvisited</span>
+</div>
+<div class="flex items-center gap-3 text-xs font-medium text-slate-600">
+<div class="size-3 border border-slate-200 rounded relative">
+<span class="absolute top-0 right-0 w-1 h-1 bg-amber-500 rounded-full"></span>
+</div>
+<span>Marked for Review</span>
+</div>
+</div>
+</div>
+<!-- Helpful Hints Section -->
+<div class="bg-primary text-white p-6 rounded-xl shadow-lg">
+<h4 class="font-bold text-xs uppercase tracking-widest mb-3 opacity-60">Pro Tip</h4>
+<p class="text-sm leading-relaxed font-medium">Use number keys <span class="bg-white/20 px-1.5 py-0.5 rounded">1-5</span> to quickly select options and <span class="bg-white/20 px-1.5 py-0.5 rounded">Enter</span> for next.</p>
+</div>
+</aside>
+</main>
+<!-- Simple Footer -->
+<footer class="max-w-[1024px] mx-auto px-4 py-8 border-t border-slate-200">
+<div class="flex flex-col md:flex-row items-center justify-between gap-4 text-slate-400 text-xs font-medium">
+<p>© 2024 ExamOrbit. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Guidelines</a>
+<a class="hover:text-primary" href="#">Report Error</a>
+<a class="hover:text-primary" href="#">Help Center</a>
+</div>
+</div>
+</footer>
+</body></html>

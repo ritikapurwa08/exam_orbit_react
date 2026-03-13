@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ExamOrbit - Subject Selection</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "background-light": "#ffffff",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sidebar-fixed {
+            width: 240px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display">
+<div class="flex min-h-screen">
+<!-- Sidebar Navigation -->
+<aside class="sidebar-fixed fixed left-0 top-0 h-full border-r border-slate-200 dark:border-slate-800 bg-background-light dark:bg-background-dark z-50">
+<div class="flex flex-col h-full p-6">
+<div class="mb-10">
+<h1 class="text-primary dark:text-white text-xl font-bold tracking-tight">ExamOrbit</h1>
+<p class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wider mt-1">Exam Preparation</p>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-white transition-colors" href="#">
+<span class="material-symbols-outlined text-[22px]">book_2</span>
+<span class="text-sm font-semibold">Subjects</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-[22px]">history</span>
+<span class="text-sm font-medium">History</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-[22px]">leaderboard</span>
+<span class="text-sm font-medium">Leaderboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+<span class="text-sm font-medium">Study Groups</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="#">
+<span class="material-symbols-outlined text-[22px]">account_circle</span>
+<span class="text-sm font-medium">Profile</span>
+</a>
+</nav>
+<div class="pt-6 border-t border-slate-200 dark:border-slate-800">
+<button class="w-full flex items-center justify-center gap-2 py-3 px-4 border-2 border-primary dark:border-white text-primary dark:text-white rounded-lg hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-black transition-all font-bold text-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+                        New Session
+                    </button>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 ml-[240px] p-8 lg:p-12">
+<!-- Header Section -->
+<header class="max-w-7xl mx-auto mb-12">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div class="space-y-2">
+<h2 class="text-4xl font-black tracking-tight text-slate-900 dark:text-white">Select Subject</h2>
+<p class="text-lg text-slate-500 dark:text-slate-400">Choose a subject to start your practice session</p>
+</div>
+<div class="flex gap-3">
+<button class="p-2 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="p-2 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined">filter_list</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Subject Cards Grid -->
+<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Chemistry -->
+<div class="group relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+<div class="w-14 h-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">science</span>
+</div>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">Chemistry</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">14 Topics • 280 Questions</p>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Mathematics -->
+<div class="group relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+<div class="w-14 h-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">calculate</span>
+</div>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">Mathematics</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">18 Topics • 420 Questions</p>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Geography -->
+<div class="group relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+<div class="w-14 h-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">public</span>
+</div>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">Geography</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">10 Topics • 150 Questions</p>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Physics -->
+<div class="group relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+<div class="w-14 h-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+</div>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">Physics</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">16 Topics • 340 Questions</p>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Biology -->
+<div class="group relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+<div class="w-14 h-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">science</span>
+</div>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">Biology</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">12 Topics • 290 Questions</p>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+<!-- History -->
+<div class="group relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+<div class="w-14 h-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">history_edu</span>
+</div>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">History</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">15 Topics • 200 Questions</p>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Literature -->
+<div class="group relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+<div class="w-14 h-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">menu_book</span>
+</div>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">Literature</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">9 Topics • 180 Questions</p>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+<!-- Computer Science -->
+<div class="group relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-6 transition-all hover:shadow-xl hover:-translate-y-1 cursor-pointer">
+<div class="w-14 h-14 rounded-lg bg-slate-100 dark:bg-slate-800 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">terminal</span>
+</div>
+<h3 class="text-xl font-bold mb-1 text-slate-900 dark:text-white">Computer Science</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400">11 Topics • 250 Questions</p>
+<div class="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">arrow_forward_ios</span>
+</div>
+</div>
+</div>
+<!-- Request Section -->
+<footer class="max-w-7xl mx-auto mt-16 flex justify-center">
+<button class="flex items-center gap-3 px-8 py-4 bg-primary text-white rounded-lg font-bold hover:bg-slate-800 transition-all shadow-lg">
+<span class="material-symbols-outlined">add_circle</span>
+                    Request New Subject
+                </button>
+</footer>
+</main>
+</div>
+</body></html>

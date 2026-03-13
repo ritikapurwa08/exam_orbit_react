@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ExamOrbit | Profile &amp; Analytics Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.02) 1px, transparent 1px), linear-gradient(to right, rgba(0,0,0,0.02) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex min-h-screen w-full bg-white dark:bg-background-dark">
+<!-- Side Navigation -->
+<aside class="w-64 border-r border-slate-200 dark:border-slate-800 flex flex-col h-screen sticky top-0 bg-white dark:bg-background-dark">
+<div class="p-6 flex flex-col h-full justify-between">
+<div class="flex flex-col gap-8">
+<!-- User Profile Mini -->
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border border-slate-200" data-alt="User avatar for Orbit_User_882" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYRIqNAnKQrBNQH0tMaPfr63xDwcun6ViQvB7XktcbSsP5s0w7KeaV90Gvxn7iLItaxuHx2FUZTAXUjHkWjBZjucaUx0Zj490HZub9CRUc5jxhsl1gWVgLpGQ2AFCFAlqh02kg5fwA4YEOGDC49S8lnCFcDkc56E3xRtd2m1FCL0sqPOfh6By5NKEf5gVQui-iFSZwxkwHyO7SvwA_3hbQQptWgczB2nvZNqrr4wBFLQ-aZFpaTqTaogOR4SFfz63xAzyzCRVZlbk");'></div>
+<div class="flex flex-col overflow-hidden">
+<h1 class="text-slate-900 dark:text-slate-100 text-sm font-semibold truncate leading-tight">Orbit_User_882</h1>
+<p class="text-slate-500 text-xs font-medium">Premium Plan</p>
+</div>
+</div>
+<!-- Nav Links -->
+<nav class="flex flex-col gap-1">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-white" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<p class="text-sm font-medium">Dashboard</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800" href="#">
+<span class="material-symbols-outlined text-[20px]">insights</span>
+<p class="text-sm font-medium">Analytics</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800" href="#">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+<p class="text-sm font-medium">Exams</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800" href="#">
+<span class="material-symbols-outlined text-[20px]">library_books</span>
+<p class="text-sm font-medium">Resources</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<p class="text-sm font-medium">Settings</p>
+</a>
+</nav>
+</div>
+<div class="flex flex-col gap-4">
+<div class="p-4 bg-slate-50 dark:bg-slate-900 rounded-xl border border-slate-100 dark:border-slate-800">
+<p class="text-xs font-bold text-slate-900 dark:text-slate-100 mb-1">PRO UPDATES</p>
+<p class="text-[11px] text-slate-500 mb-3 leading-relaxed">Unlock advanced AI-driven performance tracking.</p>
+<button class="w-full py-2 bg-primary text-white text-xs font-bold rounded-lg hover:opacity-90">
+                        Upgrade Now
+                    </button>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col bg-white dark:bg-background-dark overflow-y-auto">
+<!-- Top Bar / Header -->
+<header class="px-8 pt-10 pb-6">
+<div class="flex flex-wrap justify-between items-end gap-4">
+<div class="flex flex-col gap-1">
+<h2 class="text-slate-900 dark:text-slate-100 text-3xl font-black tracking-tight uppercase">Analytics Dashboard</h2>
+<p class="text-slate-500 text-sm font-medium">Performance insights and study trends for Orbit_User_882</p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 border border-slate-200 dark:border-slate-700 rounded-lg text-xs font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">calendar_today</span> Last 30 Days
+                    </button>
+<button class="px-4 py-2 bg-primary text-white rounded-lg text-xs font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">download</span> Export Report
+                    </button>
+</div>
+</div>
+</header>
+<!-- User Identity Section -->
+<section class="px-8 mb-8">
+<div class="p-6 border border-slate-200 dark:border-slate-800 rounded-xl flex flex-col md:flex-row md:items-center justify-between gap-6">
+<div class="flex items-center gap-6">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-24 border-4 border-slate-100 dark:border-slate-800 shadow-sm" data-alt="Detailed user avatar for Orbit_User_882" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDSiBP7MRv0F5wR-KHcS9jZsyVhaBhArd_eC-DpsJ49pPPMoj_Ibd1PGWd8ai2rjQOCPHALAqWSPUbfwfBZswgsyvLUXagWCV8lMFnxpziHJNsX6nw9PJthJRUgiMgjN8OTDRWTf4vJ2ImReV7-a3CBjr4-tD2ZSy8DujaitApJ9LvqRUzLXdjQlLV25FEXr9IykQoJuaJN-SpNQbL_nElU54FuWZ9XR57hYU3czSlqzPG0K3l_PUO-zHKQO5C1IG0fzS-_12e6tNo");'></div>
+<div class="absolute bottom-0 right-0 size-6 bg-green-500 rounded-full border-2 border-white dark:border-background-dark"></div>
+</div>
+<div class="flex flex-col">
+<p class="text-slate-900 dark:text-slate-100 text-2xl font-bold tracking-tight">Orbit_User_882</p>
+<div class="flex flex-col sm:flex-row sm:items-center gap-x-4 gap-y-1 mt-1">
+<p class="text-slate-500 text-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">fingerprint</span> Student ID: #882-XO
+                            </p>
+<p class="text-slate-500 text-sm font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">history</span> Active since Sept 2023
+                            </p>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="text-center px-6 py-2 border-r border-slate-100 dark:border-slate-800 last:border-0">
+<p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Global Rank</p>
+<p class="text-slate-900 dark:text-slate-100 text-xl font-black">#1,204</p>
+</div>
+<div class="text-center px-6 py-2 border-r border-slate-100 dark:border-slate-800 last:border-0">
+<p class="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Streak</p>
+<p class="text-slate-900 dark:text-slate-100 text-xl font-black">12 Days</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Grid -->
+<section class="px-8 grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors group">
+<p class="text-slate-500 text-sm font-semibold">Overall Score</p>
+<div class="flex items-end gap-2">
+<p class="text-slate-900 dark:text-slate-100 text-4xl font-black leading-none">84%</p>
+<p class="text-green-600 text-sm font-bold pb-1 flex items-center"><span class="material-symbols-outlined text-sm">arrow_upward</span> 5.2%</p>
+</div>
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-1.5 rounded-full mt-2">
+<div class="bg-primary h-full rounded-full" style="width: 84%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors">
+<p class="text-slate-500 text-sm font-semibold">Percentile</p>
+<div class="flex items-end gap-2">
+<p class="text-slate-900 dark:text-slate-100 text-4xl font-black leading-none">92nd</p>
+<p class="text-green-600 text-sm font-bold pb-1 flex items-center"><span class="material-symbols-outlined text-sm">arrow_upward</span> 1.5%</p>
+</div>
+<p class="text-slate-400 text-xs font-medium mt-2">Top 8% of all candidates globally</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl p-6 border border-slate-200 dark:border-slate-800 hover:border-primary transition-colors">
+<p class="text-slate-500 text-sm font-semibold">Exams Taken</p>
+<div class="flex items-end gap-2">
+<p class="text-slate-900 dark:text-slate-100 text-4xl font-black leading-none">45</p>
+<p class="text-green-600 text-sm font-bold pb-1">+3 this week</p>
+</div>
+<p class="text-slate-400 text-xs font-medium mt-2">128.5 hours total study time</p>
+</div>
+</section>
+<!-- Suggested Revision Area (Highlighted Weakness) -->
+<section class="px-8 mb-8">
+<div class="bg-primary text-white rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]">warning</span>
+</div>
+<div class="flex flex-col gap-2 relative z-10">
+<div class="flex items-center gap-2 bg-white/20 px-3 py-1 rounded-full w-fit">
+<span class="material-symbols-outlined text-sm">priority_high</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">Urgent Revision</span>
+</div>
+<h3 class="text-2xl font-bold">Weak Topic: Organic Chemistry Nomenclature</h3>
+<p class="text-slate-300 text-sm font-medium max-w-md">Your accuracy in this topic has dropped by 14% in the last 3 mock exams. We recommend a focused 45-minute review session.</p>
+</div>
+<div class="flex gap-3 relative z-10">
+<button class="px-6 py-3 bg-white text-primary rounded-lg font-bold text-sm hover:bg-slate-100">Start Review</button>
+<button class="px-6 py-3 border border-white/30 rounded-lg font-bold text-sm hover:bg-white/10">Skip for now</button>
+</div>
+</div>
+</section>
+<!-- Advanced Analytics Section -->
+<section class="px-8 pb-12">
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-bold tracking-tight mb-6">Advanced Analytics</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<!-- Performance Trend (Line Chart Placeholder) -->
+<div class="border border-slate-200 dark:border-slate-800 rounded-xl p-6 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<p class="text-sm font-bold text-slate-900 dark:text-slate-100">Performance Trend</p>
+<span class="material-symbols-outlined text-slate-400">show_chart</span>
+</div>
+<div class="h-64 w-full chart-container flex items-end justify-between px-4 pb-2 border-b border-l border-slate-100">
+<!-- Simulated Bar Chart for Trend (Cleanest for HTML/CSS) -->
+<div class="w-8 bg-slate-100 dark:bg-slate-800 rounded-t h-[40%] hover:bg-primary transition-all relative group">
+<span class="absolute -top-6 left-0 text-[10px] font-bold opacity-0 group-hover:opacity-100">62%</span>
+</div>
+<div class="w-8 bg-slate-100 dark:bg-slate-800 rounded-t h-[45%] hover:bg-primary transition-all relative group"></div>
+<div class="w-8 bg-slate-100 dark:bg-slate-800 rounded-t h-[55%] hover:bg-primary transition-all relative group"></div>
+<div class="w-8 bg-slate-100 dark:bg-slate-800 rounded-t h-[52%] hover:bg-primary transition-all relative group"></div>
+<div class="w-8 bg-slate-100 dark:bg-slate-800 rounded-t h-[65%] hover:bg-primary transition-all relative group"></div>
+<div class="w-8 bg-slate-100 dark:bg-slate-800 rounded-t h-[75%] hover:bg-primary transition-all relative group"></div>
+<div class="w-8 bg-primary rounded-t h-[84%] relative group">
+<span class="absolute -top-6 left-0 text-[10px] font-bold text-primary">84%</span>
+</div>
+</div>
+<div class="flex justify-between text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+<span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span>
+</div>
+</div>
+<!-- Subject Distribution (Radar/Pie Alternative) -->
+<div class="border border-slate-200 dark:border-slate-800 rounded-xl p-6 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<p class="text-sm font-bold text-slate-900 dark:text-slate-100">Subject Distribution</p>
+<span class="material-symbols-outlined text-slate-400">track_changes</span>
+</div>
+<div class="flex flex-col gap-4 py-2">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs font-bold uppercase tracking-tight">
+<span>Quantum Physics</span>
+<span>94%</span>
+</div>
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[94%]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs font-bold uppercase tracking-tight">
+<span>Molecular Biology</span>
+<span>88%</span>
+</div>
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+<div class="bg-primary/70 h-full w-[88%]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs font-bold uppercase tracking-tight">
+<span>Advanced Calculus</span>
+<span>76%</span>
+</div>
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+<div class="bg-primary/40 h-full w-[76%]"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex justify-between text-xs font-bold uppercase tracking-tight text-red-500">
+<span>Organic Chemistry</span>
+<span>52%</span>
+</div>
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+<div class="bg-red-500 h-full w-[52%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Time Allocation (Bar Chart) -->
+<div class="border border-slate-200 dark:border-slate-800 rounded-xl p-6 lg:col-span-2 flex flex-col gap-4">
+<div class="flex justify-between items-center">
+<p class="text-sm font-bold text-slate-900 dark:text-slate-100">Weekly Time Allocation (Hours)</p>
+<span class="material-symbols-outlined text-slate-400">timer</span>
+</div>
+<div class="grid grid-cols-7 gap-4 items-end h-40">
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-[20%] group-hover:bg-primary rounded-sm transition-all"></div>
+<span class="text-[9px] font-bold text-slate-400">MON</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-[45%] group-hover:bg-primary rounded-sm transition-all"></div>
+<span class="text-[9px] font-bold text-slate-400">TUE</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-[60%] group-hover:bg-primary rounded-sm transition-all"></div>
+<span class="text-[9px] font-bold text-slate-400">WED</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-[35%] group-hover:bg-primary rounded-sm transition-all"></div>
+<span class="text-[9px] font-bold text-slate-400">THU</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-[85%] group-hover:bg-primary rounded-sm transition-all"></div>
+<span class="text-[9px] font-bold text-slate-400">FRI</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full bg-primary h-[95%] rounded-sm transition-all"></div>
+<span class="text-[9px] font-bold text-primary">SAT</span>
+</div>
+<div class="flex flex-col items-center gap-2 group">
+<div class="w-full bg-slate-100 dark:bg-slate-800 h-[15%] group-hover:bg-primary rounded-sm transition-all"></div>
+<span class="text-[9px] font-bold text-slate-400">SUN</span>
+</div>
+</div>
+<div class="flex items-center gap-6 mt-2 pt-4 border-t border-slate-100 dark:border-slate-800">
+<div class="flex items-center gap-2">
+<div class="size-3 rounded-sm bg-primary"></div>
+<span class="text-xs font-medium text-slate-600">Active Study</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="size-3 rounded-sm bg-slate-200"></div>
+<span class="text-xs font-medium text-slate-600">Mock Exams</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</body></html>

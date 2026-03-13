@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>ExamOrbit | Leaderboards</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="flex h-screen overflow-hidden">
+<!-- Persistent Side Navigation -->
+<aside class="w-64 flex-shrink-0 border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-black h-full flex flex-col">
+<div class="p-6 flex flex-col gap-8 h-full">
+<!-- Brand Profile -->
+<div class="flex items-center gap-3">
+<div class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white overflow-hidden">
+<img class="h-full w-full object-cover" data-alt="User profile avatar placeholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVkQrBwWbqULj7IW3Py-pq1VJ7xMLROFw27D0ajkTlNiyzdBm3eeOYT6KHG5Q_kG6Cf9cPe5C4mM8ZZEaZCxwHgRCii6OdAjM7P9cXvoPySKXAvTksKIrtyB-Dz_7Vl0miEEGKh484P7OAoNrBXaE-7a9l2YLuHPVTfkhKBuB8xqD_tEBRZumUJ66lr8BS9i1AWhJLogEBMnPN0A9sOBMyCJ0DLjS7lyWMvdQBRYcaZlsorAZPA4NSDTrMGNmZ62vkWyeqUzsRtLY"/>
+</div>
+<div class="flex flex-col">
+<h1 class="text-sm font-bold leading-none">Alex Rivera</h1>
+<p class="text-xs text-slate-500 mt-1 uppercase tracking-wider">Premium Plan</p>
+</div>
+</div>
+<!-- Navigation Links -->
+<nav class="flex flex-col gap-1 flex-grow">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors" href="#">
+<span class="material-symbols-outlined text-[22px]">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors" href="#">
+<span class="material-symbols-outlined text-[22px]">assignment</span>
+<span class="text-sm font-medium">Exams</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary text-white" href="#">
+<span class="material-symbols-outlined text-[22px]">emoji_events</span>
+<span class="text-sm font-medium">Leaderboard</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors" href="#">
+<span class="material-symbols-outlined text-[22px]">bar_chart</span>
+<span class="text-sm font-medium">Analytics</span>
+</a>
+</nav>
+<!-- Bottom Actions -->
+<div class="mt-auto pt-6 border-t border-slate-100 dark:border-slate-900">
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors" href="#">
+<span class="material-symbols-outlined text-[22px]">settings</span>
+<span class="text-sm font-medium">Settings</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="flex-1 overflow-y-auto">
+<!-- Header -->
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-8 py-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary dark:text-slate-100">trophy</span>
+<h2 class="text-xl font-bold tracking-tight">Leaderboards</h2>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative group">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
+<input class="pl-10 pr-4 py-2 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-lg text-sm focus:ring-1 focus:ring-primary focus:border-primary outline-none w-64 transition-all" placeholder="Search rankings..." type="text"/>
+</div>
+<button class="p-2 rounded-lg bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors relative">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="absolute top-2 right-2 w-2 h-2 bg-primary rounded-full border-2 border-white dark:border-slate-900"></span>
+</button>
+</div>
+</header>
+<div class="p-8 max-w-5xl mx-auto">
+<!-- Tabs Navigation -->
+<div class="flex gap-8 border-b border-slate-200 dark:border-slate-800 mb-8">
+<button class="pb-4 text-sm font-bold border-b-2 border-primary text-primary tracking-wide">GLOBAL</button>
+<button class="pb-4 text-sm font-medium text-slate-500 border-b-2 border-transparent hover:text-slate-800 dark:hover:text-slate-200 transition-colors tracking-wide">WEEKLY</button>
+<button class="pb-4 text-sm font-medium text-slate-500 border-b-2 border-transparent hover:text-slate-800 dark:hover:text-slate-200 transition-colors tracking-wide">BY SUBJECT</button>
+</div>
+<!-- Podium Section -->
+<div class="grid grid-cols-3 gap-6 mb-12 items-end">
+<!-- Rank 2 -->
+<div class="flex flex-col items-center">
+<div class="relative mb-4 group">
+<div class="w-24 h-24 rounded-full p-1 bg-slate-300 dark:bg-slate-700">
+<img class="w-full h-full rounded-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Leaderboard rank 2 profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZBqeuFMJ5Gk0QVkQoWeFKR5Niw-bl6EyG6irutJszJl7kPhMMrEcfKdIzTshXJ5Tr39QHh1JkWOkn38IgMa-ANjeuZuSzq_1JDSyKzuKfmBp6LRj4J7EPMD89WHsyLccY_hCpi2_FrUpjH0HQYqJQ8kqs3O7irtTVosy4j4jILBKt-5Yxq14v75LomrNhGo4_JxD3cj3j7jSHAL5tj8FnazL9b4RUiN3vHYdHHTo4GXAEKEwdoS5Zu8rux82UoiPk7M6WgN0nNPw"/>
+</div>
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-slate-400 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-background-light dark:border-background-dark">2</div>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-center">Elena Vance</h3>
+<p class="text-xs text-slate-500 font-medium">12,450 pts</p>
+</div>
+<!-- Rank 1 (Center) -->
+<div class="flex flex-col items-center">
+<span class="material-symbols-outlined text-yellow-500 text-3xl mb-2 fill-1">workspace_premium</span>
+<div class="relative mb-4">
+<div class="w-32 h-32 rounded-full p-1.5 bg-gradient-to-tr from-yellow-400 to-yellow-600 shadow-xl shadow-yellow-500/20">
+<img class="w-full h-full rounded-full object-cover" data-alt="Leaderboard rank 1 profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3r7yzvmE5OC2fDf0pbeHNnPlDM0LWacjmg7WHb_K98kuBqQfKFD4w7YsLcgLDKMg3ssogRtwFakOrH8v7Ddfsny0avS9zYrIqPNnJ7rNvnUXHwZEXfGRLIy6RgazaRPONpVeyBbVzobA4hNznaPczH_yLYzN1csrtExnzvuHXG7f271DC0QoeHpeb2yRKe2YFuLt39Lz6YpOUovXJU2TXWWT8v68ptBeh3IfAzUmHTesuY0Rr42iYm5ZRWCaXDtqJ5aQbFKo7yFY"/>
+</div>
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-yellow-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg border-4 border-background-light dark:border-background-dark">1</div>
+</div>
+<h3 class="font-bold text-lg text-slate-900 dark:text-slate-100 text-center">Marcus Thorne</h3>
+<p class="text-sm text-primary dark:text-slate-300 font-bold">15,820 pts</p>
+</div>
+<!-- Rank 3 -->
+<div class="flex flex-col items-center">
+<div class="relative mb-4 group">
+<div class="w-24 h-24 rounded-full p-1 bg-amber-600/30">
+<img class="w-full h-full rounded-full object-cover grayscale group-hover:grayscale-0 transition-all" data-alt="Leaderboard rank 3 profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6-AEwDBFs2UuMMlrZ1iLsiKmZB-h2cshywH3O7XCSUYzfZJNOsZwgGYMKd6nLEtnmG7padjr0YlNjPorTbhcmf8jH1BynhVLramWlx-Kt86JaHwbb7varngbgZckcVc7S-7KioiR6lAmVrtM325QgZ2-IUJngbFq6vCmm-mgXHiBaTy412sqKXaGwm-eNeNxLp7qR_QNofdIu-nq3y3pm_QyuH6C2HZ-N8zIy9o4WieUW8SUBej_94rJpsWTrX8mdFCUZnW0HUvE"/>
+</div>
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-amber-700 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm border-2 border-background-light dark:border-background-dark">3</div>
+</div>
+<h3 class="font-bold text-slate-900 dark:text-slate-100 text-center">Siddharth Rao</h3>
+<p class="text-xs text-slate-500 font-medium">11,900 pts</p>
+</div>
+</div>
+<!-- Table Container -->
+<div class="bg-white dark:bg-black border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-slate-50 dark:bg-slate-900/50 border-b border-slate-100 dark:border-slate-900">
+<th class="px-6 py-4 text-[11px] font-bold text-slate-400 uppercase tracking-widest">Rank</th>
+<th class="px-6 py-4 text-[11px] font-bold text-slate-400 uppercase tracking-widest">User</th>
+<th class="px-6 py-4 text-[11px] font-bold text-slate-400 uppercase tracking-widest text-right">Points</th>
+<th class="px-6 py-4 text-[11px] font-bold text-slate-400 uppercase tracking-widest text-center">Trend</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-50 dark:divide-slate-900">
+<!-- Table Row 4 -->
+<tr class="hover:bg-slate-50/50 dark:hover:bg-slate-900/30 transition-colors">
+<td class="px-6 py-4 font-bold text-slate-400">4</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="User avatar for rank 4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC60pzK8U4Ej1pMKruOnldvATdSk_eYLd_JPznEcbmOM8uHOlohIVmhtHod-5atpDxua0IP2-3yNZ2Ck-m6S6GBUpQhq03SAvQV2K1w3tIt6VVSE7CjMuIw4_OYLugfUIvtn_9g0RmvM2mP1xVYEwc0wgeYawafFzNOr2Z5Xonz5QcmW1QDphpOiNZqL9pwFnNiXhfkcygovPzVyg8sOxilTurYBZ9nkzZb5hDuYHhUiBkkUv0NISCzvWK7hdLlFo1WbxBoyrEBP7Q"/>
+</div>
+<div>
+<p class="text-sm font-semibold">Sarah Jenkins</p>
+<p class="text-[10px] text-slate-400 uppercase tracking-tight">Level 42</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-bold">10,540</span>
+</td>
+<td class="px-6 py-4 text-center">
+<span class="material-symbols-outlined text-green-500 text-sm">trending_up</span>
+</td>
+</tr>
+<!-- Table Row 5 -->
+<tr class="hover:bg-slate-50/50 dark:hover:bg-slate-900/30 transition-colors">
+<td class="px-6 py-4 font-bold text-slate-400">5</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="User avatar for rank 5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTvykv74Y4FMbLVxOoH3esk4HuEJBZamRPKneW2CYI_q4-gbT82Zfvz9ZXlydan42xxWCIC0BRG99DSFUoPgfGaqCdNv1GRFTsIr1oDxH1J0bALyjxbifGxctfzH2VMSyyEsDCI0d8xIyNI90QgA1hqnVQ2IiGaO1XWlnL47P_ZRp3GA8sk6KZKDZgKXgBmr6CB1dpFASIgGp-MPwH4tPzhj5lIoTUZMGbq3avOSxoh5t5QQHkot9KC6hV60UGaf2PzwhCwOtWAtE"/>
+</div>
+<div>
+<p class="text-sm font-semibold">Maya Patel</p>
+<p class="text-[10px] text-slate-400 uppercase tracking-tight">Level 38</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-bold">9,815</span>
+</td>
+<td class="px-6 py-4 text-center">
+<span class="material-symbols-outlined text-slate-300 dark:text-slate-600 text-sm">trending_flat</span>
+</td>
+</tr>
+<!-- Table Row 6 (Current User Example) -->
+<tr class="bg-primary/5 dark:bg-white/5 border-l-4 border-primary">
+<td class="px-6 py-4 font-bold text-primary dark:text-slate-100">6</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full overflow-hidden ring-2 ring-primary ring-offset-2 dark:ring-offset-black">
+<img class="h-full w-full object-cover" data-alt="Logged in user avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh1eM2UvwuYybSumLC8HkvWeqD-gqkXg60BZ0efIEJnS0nuJw8ZVwiPmVqQ5kGKuDHpQlglBrUbfNtVbbpVpbzNH7vO_53Q8VEzov9kz7XNQpEI9B7u2jJSXqBmA7SVOYkE74yGCyXDZRcYyrQgB8Io8DgyAl1RvI7YF0UsAOmpH6mrBzOvhmAb2-0rhFgqpEGsEEuLvGdh3VvwkrTbrlvBSPL8cQlvMTueOl9Y5JuFrhwWA0v4U_WtI1RqxhJc-Pfib9QKDxg_iU"/>
+</div>
+<div>
+<p class="text-sm font-bold">Alex Rivera <span class="text-[10px] bg-primary text-white px-1.5 py-0.5 rounded ml-1 uppercase">You</span></p>
+<p class="text-[10px] text-slate-400 uppercase tracking-tight">Level 40</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-bold text-primary">9,200</span>
+</td>
+<td class="px-6 py-4 text-center">
+<span class="material-symbols-outlined text-green-500 text-sm">trending_up</span>
+</td>
+</tr>
+<!-- Table Row 7 -->
+<tr class="hover:bg-slate-50/50 dark:hover:bg-slate-900/30 transition-colors">
+<td class="px-6 py-4 font-bold text-slate-400">7</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="User avatar for rank 7" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFRF_8OSaC79j1bjAqtpPoO5fxOrn9okN7AmbnQMcSRXdsiqtEnTMrm8-ZFAvuoQKJdLFT3TOo9rVl-bPtQT4CfKGkL8BlV6RtbxRmXb24msVAyUbIUdt6DlNtYnkDCnvunk5fqIlcGDXKfXG5MU97mfELSSpWOvAjAA3C0COFgmTcqRcTxg8M2acuXaldwXzJNxrKyaLlY2HHx-KClgv1P1uBmJXz5rjZ7tcb0KOQuWXqnC7zPiC-3v8NBLW7tuuSwgJmCIMdfRg"/>
+</div>
+<div>
+<p class="text-sm font-semibold">Julian Frost</p>
+<p class="text-[10px] text-slate-400 uppercase tracking-tight">Level 35</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-bold">8,990</span>
+</td>
+<td class="px-6 py-4 text-center">
+<span class="material-symbols-outlined text-red-500 text-sm">trending_down</span>
+</td>
+</tr>
+<!-- Table Row 8 -->
+<tr class="hover:bg-slate-50/50 dark:hover:bg-slate-900/30 transition-colors">
+<td class="px-6 py-4 font-bold text-slate-400">8</td>
+<td class="px-6 py-4">
+<div class="flex items-center gap-3">
+<div class="h-9 w-9 rounded-full overflow-hidden bg-slate-100 dark:bg-slate-800">
+<img class="h-full w-full object-cover" data-alt="User avatar for rank 8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPCktY5k5KSm6NYhvGvdVSx1E51uni1iWVn06MtetGFNwmLpaECxDj6vyuUruQgbTtc_dGXC8mEUSgve_YyDgwQEmSx4hTYfTzZpIKrkoNQdRCJ-MCjC7EZZShoTNgdfg1BUXBqMwd4q45PR2FLhOGq92O2VzoLsJNh4RKnwSOC3ECL2HhU4Cg1oNi59PSSO5h1RH5JtrgwjYfYtDPy20sNmgfqNl8zV_-zk5ujtf4SLnVSCQE4u6D5JO2t-lFVemORnk5CPUQ2sI"/>
+</div>
+<div>
+<p class="text-sm font-semibold">Chris Evans</p>
+<p class="text-[10px] text-slate-400 uppercase tracking-tight">Level 31</p>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-right">
+<span class="text-sm font-bold">8,500</span>
+</td>
+<td class="px-6 py-4 text-center">
+<span class="material-symbols-outlined text-slate-300 dark:text-slate-600 text-sm">trending_flat</span>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- Pagination-style Footer -->
+<div class="px-6 py-4 border-t border-slate-100 dark:border-slate-900 flex items-center justify-between">
+<p class="text-xs text-slate-500 font-medium tracking-tight">Showing top 50 users worldwide</p>
+<div class="flex items-center gap-2">
+<button class="text-xs font-bold text-primary hover:underline uppercase tracking-widest">Load More</button>
+<span class="material-symbols-outlined text-primary text-sm">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</body></html>

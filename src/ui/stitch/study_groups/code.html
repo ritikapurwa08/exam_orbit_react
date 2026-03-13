@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "background-light": "#f7f7f7",
+                        "background-dark": "#191919",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>ExamOrbit | Study Groups</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="flex h-screen overflow-hidden">
+<!-- Sidebar Navigation -->
+<aside class="w-20 lg:w-64 border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark flex flex-col">
+<div class="p-6 flex items-center gap-3">
+<div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+<span class="material-symbols-outlined text-lg">orbit</span>
+</div>
+<h1 class="text-xl font-bold hidden lg:block tracking-tight">ExamOrbit</h1>
+</div>
+<nav class="flex-1 px-4 space-y-1">
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/5 text-primary">
+<span class="material-symbols-outlined fill-1">group</span>
+<span class="text-sm font-medium hidden lg:block">Study Groups</span>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined">forum</span>
+<span class="text-sm font-medium hidden lg:block">Discussions</span>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined">quiz</span>
+<span class="text-sm font-medium hidden lg:block">Mock Tests</span>
+</div>
+<div class="flex items-center gap-3 px-3 py-2 rounded-lg text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-800">
+<span class="material-symbols-outlined">folder</span>
+<span class="text-sm font-medium hidden lg:block">Resources</span>
+</div>
+</nav>
+<div class="p-4 border-t border-slate-200 dark:border-slate-800">
+<button class="w-full flex items-center justify-center gap-2 bg-primary text-white py-2 rounded-lg text-sm font-bold">
+<span class="material-symbols-outlined text-sm">add</span>
+<span class="hidden lg:block">New Group</span>
+</button>
+</div>
+</aside>
+<!-- Main Workspace: Two-pane layout -->
+<main class="flex-1 flex overflow-hidden">
+<!-- Left Pane: Group & Chat List -->
+<section class="w-80 border-r border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark flex flex-col">
+<div class="p-4 border-b border-slate-200 dark:border-slate-800">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-slate-100 dark:bg-slate-800 border-none rounded-lg text-sm focus:ring-1 focus:ring-primary" placeholder="Search conversations..." type="text"/>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto">
+<div class="px-4 py-3 uppercase text-[10px] font-bold tracking-wider text-slate-400">Pinned Groups</div>
+<div class="space-y-1 px-2">
+<div class="flex items-center gap-3 p-3 rounded-lg bg-slate-50 dark:bg-slate-800 cursor-pointer border-l-2 border-primary">
+<div class="size-10 rounded-full bg-slate-200 flex-shrink-0 bg-cover bg-center" data-alt="Official logo of RPSC aspirants group" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA9TDiDpvtrDn8Lgo8Qu0fDng4As0kURpe1c6MSdLQOTYn2ErwdodiBRaGTD1fBKne0Zbz8_adt9wBNqYwkNbHIDbrx4xONJKK_eyaYOfA524Ui_QBBiLSOscTv0hsDl6d_T8CerHzSY2hzdc68abCIwOitdeMbGUoKGfYtsjDdZ_tN005ordYnRaFteZPSaqiD8i7Mz2UyLaRP414UB7Of-Thmn2_qUMrk00UR0hNYFVuSgZSoN-idmQdx6de0mwdA70QvIjZnHBA')"></div>
+<div class="flex-1 min-w-0">
+<h3 class="text-sm font-semibold truncate">RPSC 2026 Aspirants</h3>
+<p class="text-xs text-slate-500 truncate">Aryan: Check this PDF...</p>
+</div>
+<div class="flex flex-col items-end gap-1">
+<span class="text-[10px] text-slate-400 font-medium">12:45</span>
+<span class="size-4 bg-primary text-white text-[10px] flex items-center justify-center rounded-full">3</span>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer">
+<div class="size-10 rounded-full bg-slate-200 flex-shrink-0 bg-cover bg-center" data-alt="General knowledge study group avatar" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCwqQ8Ggonfn6xQG1V-jlW1Nmd9vDNt_G2V5Jj8NMxRV0MCzdQTnmyqENpIxtAeKPHgUXQlvUQ6WSbKkDdMpVbfAFx2-MwyJLGtB2ws2S-mWRLGYA49Run1i-zq3DIrza1i4qQxaVpRwBJzwwLbWMCMMJl39SUtYgq9Oonxo0QShUjhgPT77w-wpzzC7sYWoYvmHDXp8pbcIgNoify6DncJhL2i50fb2BML4XktYXcmgZa9DVQOrryIa4E2gA2R_D8PnQrit4srPNQ')"></div>
+<div class="flex-1 min-w-0">
+<h3 class="text-sm font-medium truncate">General GS Prep</h3>
+<p class="text-xs text-slate-500 truncate">Priya: Anyone for a quiz tonight?</p>
+</div>
+<span class="text-[10px] text-slate-400 font-medium">11:20</span>
+</div>
+</div>
+<div class="px-4 py-3 mt-4 uppercase text-[10px] font-bold tracking-wider text-slate-400">Direct Discussions</div>
+<div class="space-y-1 px-2">
+<div class="flex items-center gap-3 p-3 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 cursor-pointer">
+<div class="size-10 rounded-full bg-slate-200 flex-shrink-0 bg-cover bg-center" data-alt="Profile photo of mentor Rahul" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtyy6qXTJuWt5VoMEmuGnFx8slNRwtkwBx04LYJTrm26Z43w_WeDzfKVq-MmcvlN70OuxnvDZC6p2Un6sQmFBB-F40f9qE1xJGi-8aHO8Px_wdZVnv2c6a9d0GOds7JXD7CDCcW_xh2Nfkd8OKW1N8va5OIm_9mEvUZKDs5VEHBRxwEji3Daj2GCuVSM2zEQDI-gzn4PuMrBfoMtDu3_ZzSSorrD7V3WFkER-EpsNazFEVebmAybq5GaO7vH8HgpHTG3j8sVTmLiQ')"></div>
+<div class="flex-1 min-w-0">
+<h3 class="text-sm font-medium truncate">Rahul (Mentor)</h3>
+<div class="flex items-center gap-1">
+<span class="size-2 rounded-full bg-green-500"></span>
+<p class="text-xs text-slate-500 truncate">Online</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Right Pane: Active Chat Interface -->
+<section class="flex-1 bg-white dark:bg-background-dark flex flex-col relative">
+<!-- Chat Header -->
+<header class="h-16 border-b border-slate-200 dark:border-slate-800 px-6 flex items-center justify-between bg-white dark:bg-background-dark">
+<div class="flex items-center gap-4">
+<div class="size-10 rounded-full bg-slate-100 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary">diversity_3</span>
+</div>
+<div>
+<h2 class="text-sm font-bold">RPSC 2026 Aspirants</h2>
+<p class="text-[10px] text-slate-500 font-medium uppercase tracking-tight">42 Members • 8 Active</p>
+</div>
+</div>
+<div class="flex items-center gap-3 text-slate-400">
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">search</span></button>
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">call</span></button>
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">more_vert</span></button>
+</div>
+</header>
+<!-- Messages Area -->
+<div class="flex-1 overflow-y-auto p-6 space-y-6">
+<!-- Date Divider -->
+<div class="flex justify-center">
+<span class="px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full text-[10px] font-bold text-slate-500 uppercase tracking-widest">Today</span>
+</div>
+<!-- Message Bubble: Left -->
+<div class="flex gap-3 max-w-2xl">
+<div class="size-8 rounded-full bg-slate-200 flex-shrink-0 bg-cover bg-center" data-alt="Avatar of group member Priya" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDM-TAKHYpSE-fbRxTQzJ4ngfqq-THUjMbzGF-35GxuSlCK31kL9VNAXZm-QGAoYERo1ZYQLKmMEIRqIrG4C8Cb_O0LpWIC1vvpKJKXqhAMILXf_2dHuV7nrwcaD3cNQ0XnqvHAEv2vW_vjvy5PYwn3irXKvYJpe4MgX9BIXk6D6WRndWRdlYKXJqDcviAoRG33gk7O5iDgrkHUdXKHCDghAxl9hjLTJSOYoVhAxQzMqTXs5hQhAf4qsMhYPppUCaBmN3SoHCX6oe8')"></div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-xs font-bold">Priya Sharma</span>
+<span class="text-[10px] text-slate-400">12:30 PM</span>
+</div>
+<div class="bg-slate-100 dark:bg-slate-800 p-3 rounded-r-xl rounded-bl-xl text-sm leading-relaxed">
+                                Has anyone solved the polity questions from last year's prelims? I'm stuck on question #14.
+                            </div>
+</div>
+</div>
+<!-- Question Preview Card (Feature: Attach a Question) -->
+<div class="flex gap-3 max-w-2xl">
+<div class="size-8 rounded-full bg-slate-200 flex-shrink-0 bg-cover bg-center" data-alt="Avatar of group member Aryan" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmPjvu6dbn-QMlrBfSOWC00MdKYkzt5ITwATvapRRb9V-WzI84UmtNkWPRGJoYRA_PdCZ1wKMSC8IOZufiar_C2Fw6nnXM6x9W95XNZGh4ySQeWGhno5nz5Z5TwYD6nSjwZgkC-Kva01M2mDohh9epyiSggAtwFAmwRhMFEY2inHqM3xyy1LhS8cXQwtgEjtAjGl97XCVe5YWJAjR9uwwvZ-eFoe773w3NkxuyS6wCwhE3rGt6Inyfuc6wio5ZXyN72LGQBj-pJso')"></div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-xs font-bold">Aryan V.</span>
+<span class="text-[10px] text-slate-400">12:35 PM</span>
+</div>
+<div class="border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden max-w-sm bg-white dark:bg-slate-900 shadow-sm">
+<div class="px-4 py-2 border-b border-slate-100 dark:border-slate-800 bg-slate-50 dark:bg-slate-800 flex items-center justify-between">
+<span class="text-[10px] font-bold text-primary uppercase">Mock Test #4 • Q14</span>
+<span class="material-symbols-outlined text-sm text-slate-400">open_in_new</span>
+</div>
+<div class="p-4 space-y-3">
+<p class="text-sm font-medium leading-tight">Which article of the Indian Constitution deals with the 'Right to Privacy'?</p>
+<div class="space-y-2">
+<div class="text-xs p-2 border border-slate-100 dark:border-slate-800 rounded">A. Article 14</div>
+<div class="text-xs p-2 border border-slate-100 dark:border-slate-800 rounded">B. Article 19</div>
+<div class="text-xs p-2 bg-primary/5 border border-primary/20 rounded font-semibold text-primary">C. Article 21</div>
+<div class="text-xs p-2 border border-slate-100 dark:border-slate-800 rounded">D. Article 32</div>
+</div>
+</div>
+<button class="w-full py-2 bg-slate-50 dark:bg-slate-800 text-[10px] font-bold border-t border-slate-100 dark:border-slate-800 hover:text-primary transition-colors">VIEW SOLUTION</button>
+</div>
+<div class="mt-2 text-sm italic text-slate-500">
+                                This one? I think the reasoning for C is quite clear but let me know if you need the notes.
+                            </div>
+</div>
+</div>
+<!-- Message Bubble: Right (Self) -->
+<div class="flex flex-row-reverse gap-3">
+<div class="size-8 rounded-full bg-primary flex items-center justify-center text-white flex-shrink-0">
+<span class="text-[10px] font-bold">YOU</span>
+</div>
+<div class="flex flex-col items-end">
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[10px] text-slate-400">12:45 PM</span>
+</div>
+<div class="bg-primary text-white p-3 rounded-l-xl rounded-br-xl text-sm shadow-md">
+                                Thanks Aryan! I was confusing it with Article 19 freedom of speech aspects.
+                            </div>
+</div>
+</div>
+</div>
+<!-- Chat Input -->
+<div class="p-6 border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark">
+<div class="flex items-center gap-3 bg-slate-100 dark:bg-slate-800 rounded-xl px-4 py-2">
+<button class="text-slate-400 hover:text-primary transition-colors p-1" title="Attach Question">
+<span class="material-symbols-outlined">quiz</span>
+</button>
+<button class="text-slate-400 hover:text-primary transition-colors p-1" title="Add File">
+<span class="material-symbols-outlined">attach_file</span>
+</button>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-sm py-2" placeholder="Type a message or share a question..." type="text"/>
+<button class="bg-primary text-white size-10 rounded-lg flex items-center justify-center hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+</div>
+</body></html>
