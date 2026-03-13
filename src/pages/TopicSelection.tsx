@@ -1,0 +1,156 @@
+import { CenterLayout } from "../components/layout/CenterLayout";
+import { motion } from "framer-motion";
+import { Link, useSearchParams } from "react-router";
+
+const TOPICS = [
+  { id: 1, name: "Alkanes & Alkenes", status: "Completed", questions: 45, lastAttempt: "85% — 2 days ago", color: "text-green-600 bg-green-100 dark:bg-green-900/30 dark:text-green-400" },
+  { id: 2, name: "Alcohol, Phenols & Ethers", status: "In Progress", questions: 60, lastAttempt: "42% — Yesterday", color: "text-amber-600 bg-amber-100 dark:bg-amber-900/30 dark:text-amber-400" },
+  { id: 3, name: "Aldehydes, Ketones & Carboxylic Acids", status: "Not Started", questions: 75, lastAttempt: "No attempts yet", color: "text-slate-500 bg-slate-100 dark:bg-slate-800 dark:text-slate-400" },
+  { id: 4, name: "Amines", status: "Not Started", questions: 35, lastAttempt: "No attempts yet", color: "text-slate-500 bg-slate-100 dark:bg-slate-800 dark:text-slate-400" },
+  { id: 5, name: "Biomolecules", status: "Completed", questions: 50, lastAttempt: "92% — 5 days ago", color: "text-green-600 bg-green-100 dark:bg-green-900/30 dark:text-green-400" },
+];
+
+const REF_MATERIALS = [
+  { name: "Nomenclature Guide.pdf", size: "1.2 MB • PDF", icon: "description" },
+  { name: "Functional Groups Cheat Sheet", size: "850 KB • PDF", icon: "description" },
+  { name: "Reaction Mechanisms Video", size: "45 MB • MP4", icon: "movie" },
+];
+
+const container = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1, transition: { staggerChildren: 0.1 } }
+};
+
+const itemAnim = {
+  hidden: { opacity: 0, x: -20 },
+  show: { opacity: 1, x: 0, transition: { type: "spring" as const, stiffness: 300, damping: 24 } }
+};
+
+export default function TopicSelection() {
+  const [searchParams] = useSearchParams();
+  const subjectId = searchParams.get("subject") || "chemistry";
+  // We can capitalize the subject name for display
+  const subjectName = subjectId.charAt(0).toUpperCase() + subjectId.slice(1);
+
+  return (
+    <CenterLayout>
+      <div className="w-full flex flex-col md:flex-row gap-8">
+        
+        {/* Left Column (30%) */}
+        <div className="w-full md:w-1/3 flex flex-col gap-6">
+          
+          {/* Subject Header & Progress */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="bg-card/60 backdrop-blur-xl p-6 rounded-2xl border shadow-sm"
+          >
+            <div className="mb-6">
+              <span className="text-xs font-bold text-primary dark:text-primary-foreground uppercase tracking-widest mb-2 block">{subjectName}</span>
+              <h2 className="text-3xl font-black tracking-tight mb-2">Organic Chemistry</h2>
+              <p className="text-muted-foreground text-sm leading-relaxed">Master the structure, properties, and reactions of carbon-based compounds.</p>
+            </div>
+            
+            <div className="flex items-center justify-center py-6">
+              <div className="relative size-32">
+                <svg className="size-full -rotate-90" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+                  <circle className="stroke-muted" cx="18" cy="18" fill="none" r="16" strokeWidth="3"></circle>
+                  <circle className="stroke-primary" cx="18" cy="18" fill="none" r="16" strokeDasharray="100" strokeDashoffset="35" strokeLinecap="round" strokeWidth="3"></circle>
+                </svg>
+                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <span className="text-2xl font-bold leading-none">65%</span>
+                  <span className="text-[10px] font-bold text-muted-foreground uppercase mt-1">Complete</span>
+                </div>
+              </div>
+            </div>
+            
+            <button className="w-full py-2.5 bg-muted text-foreground text-xs font-bold rounded-xl transition-all hover:bg-muted/80">
+              View Syllabus
+            </button>
+          </motion.div>
+
+          {/* Reference Materials */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="flex flex-col gap-4"
+          >
+            <h3 className="text-lg font-bold px-1">Reference Materials</h3>
+            <div className="flex flex-col gap-3">
+              {REF_MATERIALS.map((mat, i) => (
+                <div key={i} className="flex items-center gap-4 bg-card/60 backdrop-blur-xl p-4 rounded-xl border group hover:border-primary/50 transition-all cursor-pointer">
+                  <div className="flex items-center justify-center rounded-lg bg-muted text-muted-foreground size-12 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                    <span className="material-symbols-outlined">{mat.icon}</span>
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-semibold truncate">{mat.name}</p>
+                    <p className="text-xs text-muted-foreground">{mat.size}</p>
+                  </div>
+                  <span className="material-symbols-outlined text-muted-foreground group-hover:text-primary transition-colors">download</span>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Right Column (70%) */}
+        <div className="w-full md:w-2/3">
+          <div className="flex items-center justify-between mb-6 px-1">
+            <h3 className="text-xl font-bold">Curriculum Topics</h3>
+            <div className="flex gap-2 bg-muted/50 p-1 rounded-lg">
+              <button className="px-3 py-1.5 text-xs font-bold bg-background shadow-sm rounded-md">All Topics</button>
+              <button className="px-3 py-1.5 text-xs font-bold text-muted-foreground hover:text-foreground">Incomplete</button>
+            </div>
+          </div>
+          
+          <motion.div 
+            variants={container}
+            initial="hidden"
+            animate="show"
+            className="flex flex-col gap-4"
+          >
+            {TOPICS.map((topic) => (
+              <motion.div 
+                key={topic.id}
+                variants={itemAnim}
+                className="bg-card/60 backdrop-blur-xl p-5 rounded-2xl border flex flex-col sm:flex-row items-center justify-between gap-4 hover:shadow-lg hover:border-primary/50 transition-all group"
+              >
+                <div className="flex-1 min-w-0 w-full">
+                  <div className="flex items-center gap-3 mb-2">
+                    <h4 className="text-lg font-bold truncate group-hover:text-primary transition-colors">{topic.name}</h4>
+                    {topic.status !== "Not Started" && (
+                      <span className={`${topic.color} text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider`}>
+                        {topic.status}
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex flex-wrap items-center gap-4">
+                    <div className="flex items-center gap-1.5 text-muted-foreground text-sm font-medium">
+                      <span className="material-symbols-outlined text-base">quiz</span>
+                      {topic.questions} Questions
+                    </div>
+                    <div className={`flex items-center gap-1.5 text-sm font-medium ${topic.status === "Not Started" ? "text-muted-foreground italic" : "text-muted-foreground"}`}>
+                      <span className="material-symbols-outlined text-base">history</span>
+                      {topic.status === "Not Started" ? topic.lastAttempt : (
+                        <span>Last Attempt: <span className="text-foreground font-semibold">{topic.lastAttempt}</span></span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                
+                <Link to="/test" className="w-full sm:w-auto">
+                  <button className="w-full sm:w-auto px-6 py-2.5 bg-primary text-primary-foreground text-sm font-bold rounded-xl hover:opacity-90 transition-opacity shadow-md">
+                    {topic.status === "Completed" ? "Practice Again" : "Start Practice"}
+                  </button>
+                </Link>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+
+      </div>
+    </CenterLayout>
+  );
+}
+
