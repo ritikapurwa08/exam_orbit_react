@@ -1,0 +1,14 @@
+[
+  {
+    "id": "q1",
+    "text": "Example question?",
+    "options": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Because A is correct."
+  }
+]

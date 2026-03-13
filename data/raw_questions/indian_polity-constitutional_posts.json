@@ -1,0 +1,327 @@
+[
+  {
+    "id": "q_200",
+    "text": "Which Articles deal with the Comptroller and Auditor General (CAG) of India?",
+    "options": [
+      "79 to 123",
+      "124 to 147",
+      "148 to 151",
+      "152 to 237",
+      "52 to 78"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The CAG is mentioned in Articles 148 to 151."
+  },
+  {
+    "id": "q_201",
+    "text": "Who is the current Comptroller and Auditor General (CAG) of India?",
+    "options": [
+      "Tushar Mehta",
+      "R. Venkataramani",
+      "Girish Chandra Murmu",
+      "Rajiv Mehrishi",
+      "Shashi Kant Sharma"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Girish Chandra Murmu is the current CAG of India."
+  },
+  {
+    "id": "q_202",
+    "text": "Who acts as the highest law officer of the Government of India?",
+    "options": [
+      "Chief Justice of India",
+      "Solicitor General",
+      "Attorney General",
+      "Law Minister",
+      "Advocate General"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Attorney General (Mahanayavadi) is the highest law officer of the Government of India."
+  },
+  {
+    "id": "q_203",
+    "text": "Who is the current Attorney General of India?",
+    "options": [
+      "K.K. Venugopal",
+      "Mukul Rohatgi",
+      "R. Venkataramani",
+      "Tushar Mehta",
+      "Harish Salve"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "R. Venkataramani is serving as the current Attorney General of India."
+  },
+  {
+    "id": "q_204",
+    "text": "What is the role of the Solicitor General of India?",
+    "options": [
+      "Head of Supreme Court",
+      "Highest Law Officer of India",
+      "Subordinate to Attorney General",
+      "Head of State Law",
+      "Auditor of Government Accounts"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Solicitor General assists and is subordinate to the Attorney General."
+  },
+  {
+    "id": "q_205",
+    "text": "Who is the current Solicitor General of India?",
+    "options": [
+      "Tushar Mehta",
+      "R. Venkataramani",
+      "Ranjan Gogoi",
+      "Rajendra Prasad",
+      "D.Y. Chandrachud"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tushar Mehta is currently the Solicitor General of India."
+  },
+  {
+    "id": "q_206",
+    "text": "The position equivalent to Attorney General at the State level is?",
+    "options": [
+      "Solicitor General",
+      "Chief Justice of High Court",
+      "Advocate General",
+      "State Law Minister",
+      "Legal Advisor"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Advocate General is the highest law officer at the State level, akin to the AG at the Center."
+  },
+  {
+    "id": "q_207",
+    "text": "Who is the current Advocate General of Rajasthan?",
+    "options": [
+      "Rajendra Prasad (Gupta)",
+      "Tushar Mehta",
+      "R. Venkataramani",
+      "Ashok Gehlot",
+      "Sachin Pilot"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Rajendra Prasad (Gupta) is the current Advocate General of Rajasthan."
+  },
+  {
+    "id": "q_208",
+    "text": "Which post is covered by Articles 148 to 151?",
+    "options": [
+      "Attorney General",
+      "Advocate General",
+      "Prime Minister",
+      "Comptroller and Auditor General",
+      "Vice President"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Articles 148-151 cover the Comptroller and Auditor General (CAG)."
+  },
+  {
+    "id": "q_209",
+    "text": "R. Venkataramani holds which of the following offices?",
+    "options": [
+      "CAG",
+      "Attorney General",
+      "Solicitor General",
+      "Advocate General",
+      "Chief Justice"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "R. Venkataramani is the Attorney General of India."
+  },
+  {
+    "id": "q_210",
+    "text": "Girish Chandra Murmu serves as?",
+    "options": [
+      "Election Commissioner",
+      "Attorney General",
+      "Comptroller and Auditor General",
+      "Chief Minister",
+      "Governor of Rajasthan"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Girish Chandra Murmu is the CAG of India."
+  },
+  {
+    "id": "q_211",
+    "text": "The chief function of the Solicitor General is to assist the:",
+    "options": [
+      "Chief Justice of India",
+      "President of India",
+      "Attorney General",
+      "Prime Minister",
+      "CAG"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Solicitor General assists the Attorney General in their duties."
+  },
+  {
+    "id": "q_212",
+    "text": "Which body audits the accounts of the Union and the States?",
+    "options": [
+      "Supreme Court",
+      "Election Commission",
+      "CAG",
+      "Attorney General",
+      "NITI Aayog"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The CAG audits accounts at both the Union and State levels."
+  },
+  {
+    "id": "q_213",
+    "text": "What is the Hindi term for Attorney General?",
+    "options": [
+      "Mahadhivakta",
+      "Mahanayavadi",
+      "Niyantrak",
+      "Mahalekha",
+      "Nyayadhish"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Attorney General is called 'Mahanayavadi' in Hindi."
+  },
+  {
+    "id": "q_214",
+    "text": "What is the Hindi term for Advocate General?",
+    "options": [
+      "Mahanayavadi",
+      "Mahadhivakta",
+      "Mahalekhaparikshak",
+      "Solisitar General",
+      "Nyaymurti"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Advocate General is translated as 'Mahadhivakta'."
+  },
+  {
+    "id": "q_215",
+    "text": "What is the Hindi term for Comptroller and Auditor General?",
+    "options": [
+      "Niyantrak एवं Mahadhivakta",
+      "Niyantrak एवं Mahalekha Parikshak",
+      "Mahanayavadi",
+      "Nyayadhish",
+      "Mahamantri"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "CAG is termed 'Niyantrak evam Mahalekha Parikshak'."
+  },
+  {
+    "id": "q_216",
+    "text": "Who represents the Central Government in complex legal cases in the Supreme Court primarily?",
+    "options": [
+      "Solicitor General",
+      "CAG",
+      "Advocate General",
+      "Attorney General",
+      "President"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "The Attorney General primarily represents the Govt of India in the Supreme Court."
+  },
+  {
+    "id": "q_217",
+    "text": "Which article (though not explicitly listed in notes, fundamentally related) appoints the AG?",
+    "options": [
+      "Article 70",
+      "Article 76",
+      "Article 124",
+      "Article 148",
+      "Article 214"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Article 76, part of the Executive chunk (52-78), establishes the Attorney General."
+  },
+  {
+    "id": "q_218",
+    "text": "An Advocate General is appointed for a?",
+    "options": [
+      "Country",
+      "State",
+      "District",
+      "Mandal",
+      "Village"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "An Advocate General is appointed individually for every State."
+  },
+  {
+    "id": "q_219",
+    "text": "Rajasthan's Advocate General Rajendra Prasad (Gupta) operates primarily at?",
+    "options": [
+      "Supreme Court",
+      "Delhi High Court",
+      "Rajasthan High Court",
+      "Bombay High Court",
+      "District Court Jaipur"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "As Advocate General for Rajasthan, he represents the state in the Rajasthan High Court."
+  },
+  {
+    "id": "q_220",
+    "text": "The term 'Mahanayavadi' belongs to which constitutional post?",
+    "options": [
+      "Advocate General",
+      "CAG",
+      "Attorney General",
+      "Solicitor General",
+      "CJI"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Mahanayavadi means Attorney General."
+  },
+  {
+    "id": "q_221",
+    "text": "Who amongst the following is currently holding the second highest law officer post in India?",
+    "options": [
+      "Girish Chandra Murmu",
+      "Tushar Mehta",
+      "R. Venkataramani",
+      "Rajendra Prasad",
+      "Ivor Jennings"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Tushar Mehta is the Solicitor General, considered the second highest law officer."
+  },
+  {
+    "id": "q_222",
+    "text": "Which constitutional post evaluates public expenditure?",
+    "options": [
+      "Attorney General",
+      "Advocate General",
+      "CAG",
+      "Solicitor General",
+      "Chief Justice"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The CAG evaluates and audits public expenditure."
+  },
+  {
+    "id": "q_223",
+    "text": "Which officer's jurisdiction extends specifically across all of India regarding governmental legal advice?",
+    "options": [
+      "Advocate General",
+      "Attorney General",
+      "Chief Minister",
+      "State Law Officer",
+      "High Court Judge"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The Attorney General advises the Union government across India."
+  },
+  {
+    "id": "q_224",
+    "text": "CAG stands for?",
+    "options": [
+      "Chief Auditor General",
+      "Comptroller and Auditor General",
+      "Central Auditing Group",
+      "Comptroller of Accounts and Government",
+      "Consolidated Auditor General"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "CAG stands for Comptroller and Auditor General."
+  }
+]

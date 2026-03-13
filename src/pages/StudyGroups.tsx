@@ -1,6 +1,7 @@
 import { CenterLayout } from "../components/layout/CenterLayout";
 import { motion } from "framer-motion";
 import { Icons } from "../components/ui/icons";
+import { useState } from "react";
 
 const SIDEBAR_GROUPS = [
   { id: 1, name: "RPSC 2026 Aspirants", message: "Aryan: Check this PDF...", time: "12:45", unread: 3, isPinned: true },
@@ -28,6 +29,11 @@ const itemAnim = {
 };
 
 export default function StudyGroups() {
+  const [searchTerm, setSearchTerm] = useState("");
+  
+  const filteredGroups = SIDEBAR_GROUPS.filter(g => g.name.toLowerCase().includes(searchTerm.toLowerCase()) || g.message.toLowerCase().includes(searchTerm.toLowerCase()));
+  const filteredDMs = DIRECT_MSGS.filter(m => m.name.toLowerCase().includes(searchTerm.toLowerCase()));
+
   return (
     <CenterLayout>
       <div className="w-full h-[calc(100vh-140px)] flex border rounded-3xl overflow-hidden bg-background shadow-sm mt-4">
@@ -41,6 +47,8 @@ export default function StudyGroups() {
                 className="w-full pl-10 pr-4 py-2 bg-muted/50 border-none rounded-xl text-sm focus:ring-1 focus:ring-primary outline-none transition-all placeholder:text-muted-foreground" 
                 placeholder="Search conversations..." 
                 type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
               />
             </div>
           </div>
@@ -52,7 +60,9 @@ export default function StudyGroups() {
               <Icons.pin className="size-[14px]" />
             </div>
             <motion.div variants={listAnim} initial="hidden" animate="show" className="space-y-1 px-2">
-              {SIDEBAR_GROUPS.map((group, i) => (
+              {filteredGroups.length === 0 ? (
+                <div className="text-center py-4 text-xs font-semibold text-muted-foreground">No groups found</div>
+              ) : filteredGroups.map((group, i) => (
                 <motion.div variants={itemAnim} key={group.id} className={`flex items-center gap-3 p-3 rounded-xl cursor-pointer transition-colors ${i === 0 ? 'bg-muted border-l-4 border-primary' : 'hover:bg-muted/50 border-l-4 border-transparent'}`}>
                   <div className="size-10 rounded-full bg-primary/10 flex-shrink-0 flex items-center justify-center text-primary font-bold shadow-sm">
                     {group.name.slice(0, 2).toUpperCase()}
@@ -75,7 +85,9 @@ export default function StudyGroups() {
               <Icons.message className="size-[14px]" />
             </div>
             <motion.div variants={listAnim} initial="hidden" animate="show" className="space-y-1 px-2">
-              {DIRECT_MSGS.map((msg) => (
+              {filteredDMs.length === 0 ? (
+                <div className="text-center py-4 text-xs font-semibold text-muted-foreground">No users found</div>
+              ) : filteredDMs.map((msg) => (
                 <motion.div variants={itemAnim} key={msg.id} className="flex items-center gap-3 p-3 rounded-xl hover:bg-muted/50 cursor-pointer transition-colors border-l-4 border-transparent">
                   <div className="size-10 rounded-full bg-muted flex-shrink-0 flex items-center justify-center border font-bold text-muted-foreground">
                     {msg.name.slice(0, 1)}
@@ -111,7 +123,18 @@ export default function StudyGroups() {
             </div>
             <div className="flex items-center gap-2 text-muted-foreground">
               <button className="p-2 hover:bg-muted rounded-lg transition-colors"><Icons.search className="size-5" /></button>
-              <button className="p-2 hover:bg-muted rounded-lg transition-colors"><Icons.phone className="size-5" /></button>
+              <button className="group relative p-2 hover:bg-muted text-emerald-500 rounded-lg transition-colors">
+                <Icons.phone className="size-5" />
+                <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap bg-foreground text-background text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-sm z-50">
+                  Coming Soon
+                </span>
+              </button>
+              <button className="group relative p-2 hover:bg-muted text-indigo-500 rounded-lg transition-colors">
+                <Icons.video className="size-5" />
+                <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap bg-foreground text-background text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none shadow-sm z-50">
+                  Coming Soon
+                </span>
+              </button>
               <button className="p-2 hover:bg-muted rounded-lg transition-colors"><Icons.moreVertical className="size-5" /></button>
             </div>
           </header>

@@ -54,7 +54,7 @@ export default function ProfileAnalytics() {
   return (
     <CenterLayout>
       <div className="w-full max-w-5xl mx-auto flex flex-col gap-8 pb-12 pt-4">
-        
+
         {/* Top Bar / Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 px-2">
           <div className="flex flex-col gap-1">
@@ -63,18 +63,18 @@ export default function ProfileAnalytics() {
           </div>
           <div className="flex gap-3">
             <button className="px-4 py-2 border rounded-xl text-xs font-bold flex items-center gap-2 hover:bg-muted transition-colors bg-card/50 backdrop-blur-sm">
-              <Icons.calendar className="size-[14px]" /> 
+              <Icons.calendar className="size-[14px]" />
               Last 30 Days
             </button>
             <button className="px-4 py-2 bg-primary text-primary-foreground rounded-xl text-xs font-bold flex items-center gap-2 hover:opacity-90 transition-opacity shadow-sm">
-              <Icons.download className="size-[14px]" /> 
+              <Icons.download className="size-[14px]" />
               Export Report
             </button>
           </div>
         </div>
 
         {/* User Identity Section */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="bg-card/60 backdrop-blur-xl p-6 md:p-8 border rounded-3xl flex flex-col md:flex-row md:items-center justify-between gap-8 shadow-sm"
@@ -88,7 +88,7 @@ export default function ProfileAnalytics() {
                   <span className="text-3xl font-black text-muted-foreground uppercase">{initials}</span>
                 )}
                 <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                   <Icons.edit2 className="text-white size-6" />
+                  <Icons.edit2 className="text-white size-6" />
                 </div>
               </div>
               <div className="absolute bottom-0 right-0 size-6 bg-green-500 rounded-full border-[3px] border-background shadow-sm"></div>
@@ -124,7 +124,7 @@ export default function ProfileAnalytics() {
         </motion.section>
 
         {/* Stats Grid */}
-        <motion.section 
+        <motion.section
           variants={containerAnim}
           initial="hidden"
           animate="show"
@@ -142,7 +142,7 @@ export default function ProfileAnalytics() {
               </p>
             </div>
             <div className="w-full bg-muted h-2 rounded-full mt-4 overflow-hidden border">
-              <motion.div 
+              <motion.div
                 initial={{ width: 0 }}
                 animate={{ width: "84%" }}
                 transition={{ duration: 1, delay: 0.5 }}
@@ -181,7 +181,7 @@ export default function ProfileAnalytics() {
         </motion.section>
 
         {/* Suggested Revision Area */}
-        <motion.section 
+        <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
@@ -191,7 +191,7 @@ export default function ProfileAnalytics() {
             <div className="absolute top-1/2 -translate-y-1/2 right-0 opacity-[0.03] pointer-events-none transform rotate-12">
               <Icons.alertTriangle size={300} />
             </div>
-            
+
             <div className="flex flex-col gap-4 relative z-10">
               <div className="flex items-center gap-2 bg-background/20 backdrop-blur-md px-3 py-1.5 rounded-full w-fit border border-background/10">
                 <Icons.alertCircle className="size-[14px]" />
@@ -202,7 +202,7 @@ export default function ProfileAnalytics() {
                 Your accuracy in this topic has dropped by 14% in the last 3 mock exams. We recommend a focused 45-minute review session.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-3 relative z-10 w-full md:w-auto mt-4 md:mt-0">
               <button className="px-6 py-3.5 bg-background text-foreground rounded-xl font-bold text-sm hover:opacity-90 transition-opacity shadow-lg flex items-center justify-center gap-2">
                 Start Review
@@ -219,9 +219,9 @@ export default function ProfileAnalytics() {
         <section className="pt-4">
           <h2 className="text-2xl font-black tracking-tight mb-6 px-2">Advanced Analytics</h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            
+
             {/* Subject Distribution */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5 }}
@@ -244,11 +244,11 @@ export default function ProfileAnalytics() {
                       <span className={subject.score < 60 ? "text-destructive" : ""}>{subject.score}%</span>
                     </div>
                     <div className="w-full bg-muted h-2.5 rounded-full overflow-hidden border">
-                      <motion.div 
+                      <motion.div
                         initial={{ width: 0 }}
                         animate={{ width: `${subject.score}%` }}
                         transition={{ delay: 0.8 + (i * 0.1), duration: 1 }}
-                        className={`${subject.color} h-full rounded-full`} 
+                        className={`${subject.color} h-full rounded-full`}
                       />
                     </div>
                   </div>
@@ -257,7 +257,7 @@ export default function ProfileAnalytics() {
             </motion.div>
 
             {/* Time Allocation (Bar Chart) */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.6 }}
@@ -267,7 +267,7 @@ export default function ProfileAnalytics() {
                 <p className="text-base font-bold">Weekly Time Allocation</p>
                 <Icons.clock size={20} className="text-muted-foreground bg-muted p-1.5 rounded-lg box-content" />
               </div>
-              
+
               <div className="grid grid-cols-7 gap-3 sm:gap-4 items-end h-48 mt-auto px-2 border-b">
                 {[
                   { day: "MON", height: "20%", active: false },
@@ -279,8 +279,8 @@ export default function ProfileAnalytics() {
                   { day: "SUN", height: "15%", active: false },
                 ].map((item, i) => (
                   <div key={item.day} className="flex flex-col items-center gap-3 group h-full justify-end">
-                    <motion.div 
-                      className={`w-full rounded-t-md transition-colors ${item.active ? 'bg-primary' : 'bg-muted group-hover:bg-primary/50'}`} 
+                    <motion.div
+                      className={`w-full rounded-t-md transition-colors ${item.active ? 'bg-primary' : 'bg-muted group-hover:bg-primary/50'}`}
                       initial={{ height: 0 }}
                       animate={{ height: item.height }}
                       transition={{ delay: 0.8 + (i * 0.05), type: "spring" }}
@@ -289,7 +289,7 @@ export default function ProfileAnalytics() {
                   </div>
                 ))}
               </div>
-              
+
               <div className="flex items-center gap-6 mt-6 pt-4">
                 <div className="flex items-center gap-2">
                   <div className="size-3 rounded-sm bg-primary"></div>
@@ -311,7 +311,7 @@ export default function ProfileAnalytics() {
       <AnimatePresence>
         {isEditing && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -330,22 +330,22 @@ export default function ProfileAnalytics() {
                   <Icons.sigma size={20} className="rotate-45" /> {/* Close icon workaround */}
                 </button>
               </div>
-              
+
               <div className="p-6 overflow-y-auto flex-1 flex flex-col gap-6">
                 <div className="flex flex-col gap-2">
                   <label className="text-sm font-bold">Display Name</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={editName}
                     onChange={(e) => setEditName(e.target.value)}
                     className="w-full px-4 py-3 bg-background border rounded-xl text-sm font-medium focus:outline-none focus:ring-2 focus:ring-primary/50"
                   />
                 </div>
-                
+
                 <div className="flex flex-col gap-2">
                   <label className="text-sm font-bold">Biography / Tagline</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     value={editBio}
                     onChange={(e) => setEditBio(e.target.value)}
                     placeholder="Short bio about your studies"
@@ -355,14 +355,13 @@ export default function ProfileAnalytics() {
 
                 <div className="flex flex-col gap-2">
                   <label className="text-sm font-bold mb-2">Select Avatar</label>
-                  <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-3 max-h-64 overflow-y-auto p-2 border rounded-xl bg-muted/20">
+                  <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-y-20 gap-3 max-h-64 overflow-y-auto p-2 border rounded-xl bg-muted/20">
                     {AVATARS.map((avatar, idx) => (
                       <button
                         key={idx}
                         onClick={() => setEditAvatar(avatar)}
-                        className={`relative aspect-square rounded-xl overflow-hidden border-2 transition-all ${
-                          editAvatar === avatar ? 'border-primary ring-2 ring-primary/30 scale-105 shadow-md' : 'border-transparent hover:border-primary/50 opacity-70 hover:opacity-100'
-                        }`}
+                        className={`relative aspect-square rounded-xl overflow-hidden border-2 transition-all ${editAvatar === avatar ? 'border-primary ring-2 ring-primary/30 scale-105 shadow-md' : 'border-transparent hover:border-primary/50 opacity-70 hover:opacity-100'
+                          }`}
                       >
                         <img src={avatar} alt={`Avatar ${idx}`} className="w-full h-full object-cover bg-muted" />
                       </button>
@@ -370,15 +369,15 @@ export default function ProfileAnalytics() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="p-6 border-t bg-muted/20 flex justify-end gap-3">
-                <button 
+                <button
                   onClick={() => setIsEditing(false)}
                   className="px-6 py-2.5 rounded-xl text-sm font-bold hover:bg-muted transition-colors border border-transparent hover:border-border"
                 >
                   Cancel
                 </button>
-                <button 
+                <button
                   onClick={handleSave}
                   className="px-6 py-2.5 bg-primary text-primary-foreground rounded-xl text-sm font-bold hover:opacity-90 transition-opacity shadow-sm"
                 >

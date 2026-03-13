@@ -1,19 +1,14 @@
 import { CenterLayout } from "../components/layout/CenterLayout";
 import { motion } from "framer-motion";
 import { Link, useSearchParams } from "react-router";
-
-const TOPICS = [
-  { id: 1, name: "Alkanes & Alkenes", status: "Completed", questions: 45, lastAttempt: "85% — 2 days ago", color: "text-green-600 bg-green-100 dark:bg-green-900/30 dark:text-green-400" },
-  { id: 2, name: "Alcohol, Phenols & Ethers", status: "In Progress", questions: 60, lastAttempt: "42% — Yesterday", color: "text-amber-600 bg-amber-100 dark:bg-amber-900/30 dark:text-amber-400" },
-  { id: 3, name: "Aldehydes, Ketones & Carboxylic Acids", status: "Not Started", questions: 75, lastAttempt: "No attempts yet", color: "text-slate-500 bg-slate-100 dark:bg-slate-800 dark:text-slate-400" },
-  { id: 4, name: "Amines", status: "Not Started", questions: 35, lastAttempt: "No attempts yet", color: "text-slate-500 bg-slate-100 dark:bg-slate-800 dark:text-slate-400" },
-  { id: 5, name: "Biomolecules", status: "Completed", questions: 50, lastAttempt: "92% — 5 days ago", color: "text-green-600 bg-green-100 dark:bg-green-900/30 dark:text-green-400" },
-];
+import { Icons } from "../components/ui/icons";
+import { getSubjectById } from "../data/subjects";
+import { useQuery } from "convex/react";
+import { api } from "../../convex/_generated/api";
 
 const REF_MATERIALS = [
-  { name: "Nomenclature Guide.pdf", size: "1.2 MB • PDF", icon: "description" },
-  { name: "Functional Groups Cheat Sheet", size: "850 KB • PDF", icon: "description" },
-  { name: "Reaction Mechanisms Video", size: "45 MB • MP4", icon: "movie" },
+  { name: "Nomenclature Guide.pdf", size: "1.2 MB • PDF", icon: <Icons.fileText size={20} /> },
+  { name: "Formula Cheat Sheet", size: "850 KB • PDF", icon: <Icons.fileText size={20} /> },
 ];
 
 const container = {
@@ -28,9 +23,26 @@ const itemAnim = {
 
 export default function TopicSelection() {
   const [searchParams] = useSearchParams();
-  const subjectId = searchParams.get("subject") || "chemistry";
-  // We can capitalize the subject name for display
-  const subjectName = subjectId.charAt(0).toUpperCase() + subjectId.slice(1);
+  const subjectId = searchParams.get("subject") || "rajasthan_geography";
+  const subject = getSubjectById(subjectId);
+  
+  const history = useQuery(api.history.getUserHistory) || [];
+
+  if (!subject) {
+    return (
+      <CenterLayout>
+        <div className="flex flex-col items-center justify-center py-20">
+          <h2 className="text-2xl font-bold">Subject not found</h2>
+          <Link to="/" className="text-primary mt-4 hover:underline">Return to Subjects</Link>
+        </div>
+      </CenterLayout>
+    );
+  }
+
+  // Calculate overall completion generic based on history
+  const totalCompleted = history.filter(h => h.subjectId === subjectId).length;
+  const totalTopics = subject.topics.length || 1; 
+  const completionPercentage = Math.round((totalCompleted / totalTopics) * 100);
 
   return (
     <CenterLayout>
@@ -46,9 +58,9 @@ export default function TopicSelection() {
             className="bg-card/60 backdrop-blur-xl p-6 rounded-2xl border shadow-sm"
           >
             <div className="mb-6">
-              <span className="text-xs font-bold text-primary dark:text-primary-foreground uppercase tracking-widest mb-2 block">{subjectName}</span>
-              <h2 className="text-3xl font-black tracking-tight mb-2">Organic Chemistry</h2>
-              <p className="text-muted-foreground text-sm leading-relaxed">Master the structure, properties, and reactions of carbon-based compounds.</p>
+              <span className="text-xs font-bold text-primary dark:text-primary-foreground uppercase tracking-widest mb-2 block">Syllabus Explorer</span>
+              <h2 className="text-3xl font-black tracking-tight mb-2">{subject.name}</h2>
+              <p className="text-muted-foreground text-sm leading-relaxed">Master the key concepts and practice specialized topics effectively.</p>
             </div>
             
             <div className="flex items-center justify-center py-6">
@@ -58,7 +70,7 @@ export default function TopicSelection() {
                   <circle className="stroke-primary" cx="18" cy="18" fill="none" r="16" strokeDasharray="100" strokeDashoffset="35" strokeLinecap="round" strokeWidth="3"></circle>
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="text-2xl font-bold leading-none">65%</span>
+                  <span className="text-2xl font-bold leading-none">{completionPercentage}%</span>
                   <span className="text-[10px] font-bold text-muted-foreground uppercase mt-1">Complete</span>
                 </div>
               </div>
@@ -81,13 +93,13 @@ export default function TopicSelection() {
               {REF_MATERIALS.map((mat, i) => (
                 <div key={i} className="flex items-center gap-4 bg-card/60 backdrop-blur-xl p-4 rounded-xl border group hover:border-primary/50 transition-all cursor-pointer">
                   <div className="flex items-center justify-center rounded-lg bg-muted text-muted-foreground size-12 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                    <span className="material-symbols-outlined">{mat.icon}</span>
+                    {mat.icon}
                   </div>
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-semibold truncate">{mat.name}</p>
                     <p className="text-xs text-muted-foreground">{mat.size}</p>
                   </div>
-                  <span className="material-symbols-outlined text-muted-foreground group-hover:text-primary transition-colors">download</span>
+                  <Icons.download className="text-muted-foreground group-hover:text-primary transition-colors size-5" />
                 </div>
               ))}
             </div>
@@ -110,42 +122,57 @@ export default function TopicSelection() {
             animate="show"
             className="flex flex-col gap-4"
           >
-            {TOPICS.map((topic) => (
-              <motion.div 
-                key={topic.id}
-                variants={itemAnim}
-                className="bg-card/60 backdrop-blur-xl p-5 rounded-2xl border flex flex-col sm:flex-row items-center justify-between gap-4 hover:shadow-lg hover:border-primary/50 transition-all group"
-              >
-                <div className="flex-1 min-w-0 w-full">
-                  <div className="flex items-center gap-3 mb-2">
-                    <h4 className="text-lg font-bold truncate group-hover:text-primary transition-colors">{topic.name}</h4>
-                    {topic.status !== "Not Started" && (
-                      <span className={`${topic.color} text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider`}>
-                        {topic.status}
-                      </span>
-                    )}
-                  </div>
-                  <div className="flex flex-wrap items-center gap-4">
-                    <div className="flex items-center gap-1.5 text-muted-foreground text-sm font-medium">
-                      <span className="material-symbols-outlined text-base">quiz</span>
-                      {topic.questions} Questions
-                    </div>
-                    <div className={`flex items-center gap-1.5 text-sm font-medium ${topic.status === "Not Started" ? "text-muted-foreground italic" : "text-muted-foreground"}`}>
-                      <span className="material-symbols-outlined text-base">history</span>
-                      {topic.status === "Not Started" ? topic.lastAttempt : (
-                        <span>Last Attempt: <span className="text-foreground font-semibold">{topic.lastAttempt}</span></span>
-                      )}
-                    </div>
-                  </div>
-                </div>
+            {subject.topics.length === 0 ? (
+              <div className="bg-card/60 backdrop-blur-xl p-8 rounded-2xl border flex flex-col items-center justify-center text-center">
+                <Icons.history size={48} className="text-muted-foreground mb-4 opacity-50" />
+                <h4 className="text-lg font-bold mb-2">Topics yet to be added</h4>
+                <p className="text-sm text-muted-foreground max-w-sm">We are currently compiling the best questions for this subject. Check back soon!</p>
+              </div>
+            ) : (
+              subject.topics.map((topic) => {
+                const topicHistory = history.filter(h => h.topicId === topic.id && h.subjectId === subjectId);
+                const isCompleted = topicHistory.length > 0;
+                const bestScore = isCompleted ? Math.max(...topicHistory.map(h => (h.score / h.totalQuestions) * 100)) : 0;
                 
-                <Link to="/test" className="w-full sm:w-auto">
-                  <button className="w-full sm:w-auto px-6 py-2.5 bg-primary text-primary-foreground text-sm font-bold rounded-xl hover:opacity-90 transition-opacity shadow-md">
-                    {topic.status === "Completed" ? "Practice Again" : "Start Practice"}
-                  </button>
-                </Link>
-              </motion.div>
-            ))}
+                const status = isCompleted ? "Completed" : "Not Started";
+                const color = isCompleted 
+                  ? "text-green-600 bg-green-100 dark:bg-green-900/30 dark:text-green-400" 
+                  : "text-slate-500 bg-slate-100 dark:bg-slate-800 dark:text-slate-400";
+                  
+                return (
+                  <motion.div 
+                    key={topic.id}
+                    variants={itemAnim}
+                    className="bg-card/60 backdrop-blur-xl p-5 rounded-2xl border flex flex-col sm:flex-row items-center justify-between gap-4 hover:shadow-lg hover:border-primary/50 transition-all group"
+                  >
+                    <div className="flex-1 min-w-0 w-full">
+                      <div className="flex items-center gap-3 mb-2">
+                        <h4 className="text-lg font-bold truncate group-hover:text-primary transition-colors">{topic.name}</h4>
+                        {status !== "Not Started" && (
+                          <span className={`${color} text-[10px] font-bold px-2 py-0.5 rounded uppercase tracking-wider`}>
+                            {status}
+                          </span>
+                        )}
+                      </div>
+                      <div className="flex flex-wrap items-center gap-4">
+                        <div className={`flex items-center gap-1.5 text-sm font-medium ${status === "Not Started" ? "text-muted-foreground italic" : "text-muted-foreground"}`}>
+                          <Icons.history className="size-4" />
+                          {status === "Not Started" ? "No attempts yet" : (
+                            <span>Best Score: <span className="text-foreground font-semibold">{Math.round(bestScore)}%</span></span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <Link to={`/test?subject=${subjectId}&topic=${topic.id}`} className="w-full sm:w-auto">
+                      <button className="w-full sm:w-auto px-6 py-2.5 bg-primary text-primary-foreground text-sm font-bold rounded-xl hover:opacity-90 transition-opacity shadow-md">
+                        {status === "Completed" ? "Practice Again" : "Start Practice"}
+                      </button>
+                    </Link>
+                  </motion.div>
+                );
+              })
+            )}
           </motion.div>
         </div>
 

@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router";
 
 interface CenterLayoutProps {
   children: ReactNode;
+  hideNav?: boolean;
 }
 
 const NAV_ITEMS = [
@@ -14,13 +15,14 @@ const NAV_ITEMS = [
   { name: "Profile", path: "/profile", icon: "account_circle" },
 ];
 
-export function CenterLayout({ children }: CenterLayoutProps) {
+export function CenterLayout({ children, hideNav = false }: CenterLayoutProps) {
   const location = useLocation();
 
   return (
-    <div className="min-h-screen bg-background text-foreground flex flex-col p-4 selection:bg-primary/30 selection:text-primary relative overflow-hidden">
+    <div className={`min-h-screen bg-background text-foreground flex flex-col p-4 selection:bg-primary/30 selection:text-primary relative overflow-hidden ${hideNav ? 'p-0' : ''}`}>
       
       {/* Top Navigation Bar */}
+      {!hideNav && (
       <header className="w-full max-w-5xl mx-auto flex items-center justify-between p-4 mb-8 bg-card/60 backdrop-blur-md border rounded-2xl shadow-sm z-50">
         <div className="flex items-center gap-2">
           <div className="size-8 bg-primary text-primary-foreground flex items-center justify-center rounded-lg font-black tracking-tighter">
@@ -53,8 +55,9 @@ export function CenterLayout({ children }: CenterLayoutProps) {
            New Session
         </button>
       </header>
+      )}
 
-      <div className="flex-1 w-full max-w-5xl mx-auto flex flex-col relative z-10">
+      <div className={`flex-1 w-full max-w-5xl mx-auto flex flex-col relative z-10 ${hideNav ? 'h-screen p-4' : ''}`}>
         <motion.div
           initial={{ opacity: 0, scale: 0.98, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}

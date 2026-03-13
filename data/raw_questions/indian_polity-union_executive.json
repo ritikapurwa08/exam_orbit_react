@@ -1,0 +1,327 @@
+[
+  {
+    "id": "q_100",
+    "text": "Part V of the Indian Constitution is related to?",
+    "options": [
+      "State Government",
+      "Union Territories",
+      "The Union Government",
+      "Panchayats",
+      "Fundamental Rights"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Part V of the Constitution deals with the Union Government."
+  },
+  {
+    "id": "q_101",
+    "text": "Articles 52 to 151 of the Constitution belong to which Part?",
+    "options": [
+      "Part III",
+      "Part IV",
+      "Part V",
+      "Part VI",
+      "Part VII"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Part V of the Constitution spans from Article 52 to 151."
+  },
+  {
+    "id": "q_102",
+    "text": "Which part of the Indian Constitution is the largest?",
+    "options": [
+      "Part III",
+      "Part V",
+      "Part IX",
+      "Part XII",
+      "Part XX"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Part V is the largest part of the Indian Constitution."
+  },
+  {
+    "id": "q_103",
+    "text": "What is the primary function of the Legislature (Parliament)?",
+    "options": [
+      "Interpret laws",
+      "Implement laws",
+      "Make laws",
+      "Review judgments",
+      "Enforce order"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The main function of the Legislature is to formulate and make laws."
+  },
+  {
+    "id": "q_104",
+    "text": "What is the primary function of the Executive?",
+    "options": [
+      "Make laws",
+      "Implement laws",
+      "Interpret laws",
+      "Provide justice",
+      "None of the above"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The Executive organ of the government is responsible for implementing laws."
+  },
+  {
+    "id": "q_105",
+    "text": "Which organ of the government is responsible for reviewing and interpreting laws?",
+    "options": [
+      "Executive",
+      "Legislature",
+      "Media",
+      "Judiciary",
+      "CAG"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "The Judiciary interprets and reviews laws made by the Legislature."
+  },
+  {
+    "id": "q_106",
+    "text": "The Executive segment inside Part V spans from which articles?",
+    "options": [
+      "52 to 78",
+      "79 to 123",
+      "124 to 147",
+      "148 to 151",
+      "36 to 51"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "The Executive in Part V covers Articles 52 to 78."
+  },
+  {
+    "id": "q_107",
+    "text": "Which of the following is NOT a part of the Union Executive?",
+    "options": [
+      "President",
+      "Vice-President",
+      "Prime Minister",
+      "Chief Justice of India",
+      "Attorney General"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "The Chief Justice of India is the head of the Judiciary, not the Union Executive."
+  },
+  {
+    "id": "q_108",
+    "text": "The Legislature (Parliament) in Part V is covered under which articles?",
+    "options": [
+      "52 to 78",
+      "79 to 123",
+      "124 to 147",
+      "148 to 151",
+      "152 to 237"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The Parliament (Legislature) is described in Articles 79 to 123."
+  },
+  {
+    "id": "q_109",
+    "text": "The Union Judiciary (Supreme Court) is detailed from Articles?",
+    "options": [
+      "52 to 78",
+      "79 to 123",
+      "124 to 147",
+      "148 to 151",
+      "214 to 232"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Supreme Court falls under Articles 124 to 147 in Part V."
+  },
+  {
+    "id": "q_110",
+    "text": "How many total Parts are there originally in the Indian Constitution?",
+    "options": [
+      "18",
+      "20",
+      "22",
+      "24",
+      "25"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Indian Constitution originally consisted of 22 Parts."
+  },
+  {
+    "id": "q_111",
+    "text": "How many total Articles were there initially in the Constitution?",
+    "options": [
+      "365",
+      "375",
+      "385",
+      "395",
+      "405"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "The Constitution originally had 395 Articles."
+  },
+  {
+    "id": "q_112",
+    "text": "Which part of the Constitution is considered the smallest?",
+    "options": [
+      "Part I",
+      "Part IV-A",
+      "Part XX",
+      "Part XXI",
+      "Part XXII"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Part XX is the smallest part of the Constitution."
+  },
+  {
+    "id": "q_113",
+    "text": "Part XX of the Indian Constitution contains how many Articles?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four",
+      "Five"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Part XX contains only one article, which is Article 368."
+  },
+  {
+    "id": "q_114",
+    "text": "Article 368 resides in which part of the Constitution?",
+    "options": [
+      "Part X",
+      "Part XV",
+      "Part XVIII",
+      "Part XX",
+      "Part XXII"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Article 368, dealing with amendments, resides in Part XX."
+  },
+  {
+    "id": "q_115",
+    "text": "Who famously referred to the Indian Constitution as 'Paradise of Lawyers'?",
+    "options": [
+      "B.R. Ambedkar",
+      "Jawaharlal Nehru",
+      "Ivor Jennings",
+      "Granville Austin",
+      "K.M. Munshi"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Ivor Jennings called the Indian Constitution a 'Paradise of Lawyers' due to its legal complexity."
+  },
+  {
+    "id": "q_116",
+    "text": "What does the term 'Paradise of Lawyers' imply?",
+    "options": [
+      "High salaries for lawyers",
+      "Simplistic language",
+      "Legalistic and complex language",
+      "Too much litigation",
+      "Lack of courts"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "It implies that the Constitution's language is highly legalistic and complex, creating a need (and paradise) for lawyers."
+  },
+  {
+    "id": "q_117",
+    "text": "Which part is the longest part in the Constitution?",
+    "options": [
+      "Part III",
+      "Part IV",
+      "Part V",
+      "Part VI",
+      "Part XI"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Part V, dealing with the Union, is the longest part of the Constitution."
+  },
+  {
+    "id": "q_118",
+    "text": "Which article begins Part V of the constitution?",
+    "options": [
+      "Article 50",
+      "Article 51",
+      "Article 52",
+      "Article 53",
+      "Article 54"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Part V begins at Article 52 with the President of India."
+  },
+  {
+    "id": "q_119",
+    "text": "Part V concludes with the provisions of which office?",
+    "options": [
+      "Supreme Court",
+      "Election Commission",
+      "Comptroller and Auditor General",
+      "Attorney General",
+      "Prime Minister"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Part V concludes with the CAG provisions (Articles 148-151)."
+  },
+  {
+    "id": "q_120",
+    "text": "Which constitutional concept interprets laws passed by the Parliament?",
+    "options": [
+      "Executive",
+      "CAG",
+      "Judiciary",
+      "Attorney General",
+      "Solicitor General"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Judiciary reviews and interprets the laws."
+  },
+  {
+    "id": "q_121",
+    "text": "The Union Executive includes all except?",
+    "options": [
+      "President",
+      "Vice President",
+      "Council of Ministers",
+      "CAG",
+      "Attorney General"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "The CAG is covered in a separate chapter of Part V (Arts 148-151) and isn't part of the core executive consisting of Pres, VP, PM, Council, AG."
+  },
+  {
+    "id": "q_122",
+    "text": "Article 79 to 123 pertains primarily to?",
+    "options": [
+      "Union Executive",
+      "Parliament",
+      "Supreme Court",
+      "CAG",
+      "State Legislature"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Articles 79-123 belong to Chapter II of Part V, dealing with Parliament."
+  },
+  {
+    "id": "q_123",
+    "text": "Article 124 uniquely begins the chapter on?",
+    "options": [
+      "Union Executive",
+      "Union Legislature",
+      "Union Judiciary",
+      "CAG",
+      "Elections"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Article 124 establishes the Supreme Court of India."
+  },
+  {
+    "id": "q_124",
+    "text": "The quote 'Paradise of Lawyers' was made by?",
+    "options": [
+      "Dr. B.R. Ambedkar",
+      "Dr. Rajendra Prasad",
+      "Sir Ivor Jennings",
+      "Lord Mountbatten",
+      "Jawaharlal Nehru"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Sir Ivor Jennings coined this phrase analyzing the Indian Constitution."
+  }
+]

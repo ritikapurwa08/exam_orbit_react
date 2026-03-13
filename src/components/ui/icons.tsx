@@ -56,7 +56,9 @@ import {
   BarChart,
   ArrowUp,
   AlertTriangle,
-  AlertCircle
+  AlertCircle,
+  RefreshCcw,
+  Bookmark
 } from "lucide-react";
 
 export const Icons = {
@@ -118,6 +120,8 @@ export const Icons = {
   arrowUp: ArrowUp,
   alertTriangle: AlertTriangle,
   alertCircle: AlertCircle,
+  refreshCcw: RefreshCcw,
+  bookmark: Bookmark,
 };
 
 // Extracted from sign-in HTML as requested for Central App Logo

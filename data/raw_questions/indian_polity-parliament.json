@@ -1,0 +1,327 @@
+[
+  {
+    "id": "q_300",
+    "text": "What is the nomenclature for the Legislature in India?",
+    "options": [
+      "Congress",
+      "Diet",
+      "Sansad (Parliament)",
+      "Duma",
+      "Knesset"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "In India, the Legislature is known as Sansad or Parliament."
+  },
+  {
+    "id": "q_301",
+    "text": "What is the name of the Parliament in the United States of America?",
+    "options": [
+      "Parliament",
+      "Congress",
+      "Diet",
+      "Duma",
+      "National Assembly"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "In America, the Parliament is called Congress."
+  },
+  {
+    "id": "q_302",
+    "text": "What is the name of the Parliament in Japan?",
+    "options": [
+      "Majlis",
+      "Diet",
+      "Shura",
+      "Knesset",
+      "Bundestag"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Japan's parliament is known as the Diet."
+  },
+  {
+    "id": "q_303",
+    "text": "What is the name of the Parliament in Russia?",
+    "options": [
+      "Duma",
+      "Congress",
+      "National People's Congress",
+      "Rastriya Panchayat",
+      "Jatiya Sangsad"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "The Russian Parliament is known as the Duma."
+  },
+  {
+    "id": "q_304",
+    "text": "Which country's parliament is called 'National People's Congress'?",
+    "options": [
+      "Russia",
+      "Japan",
+      "China",
+      "Pakistan",
+      "Nepal"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "China's parliament is the National People's Congress."
+  },
+  {
+    "id": "q_305",
+    "text": "What is the Parliament of Pakistan called?",
+    "options": [
+      "Majlis",
+      "Shura",
+      "National Assembly",
+      "Jatiya Sangsad",
+      "Congress"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Pakistan's parliament is known as the National Assembly."
+  },
+  {
+    "id": "q_306",
+    "text": "'Jatiya Sangsad' is the parliament of which neighboring country?",
+    "options": [
+      "Nepal",
+      "Bhutan",
+      "Bangladesh",
+      "Sri Lanka",
+      "Myanmar"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Bangladesh's parliament is called Jatiya Sangsad."
+  },
+  {
+    "id": "q_307",
+    "text": "'Rastriya Panchayat' is associated with the parliament of?",
+    "options": [
+      "Bangladesh",
+      "India",
+      "Nepal",
+      "Bhutan",
+      "Maldives"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Nepal's parliament is traditionally known as Rastriya Panchayat."
+  },
+  {
+    "id": "q_308",
+    "text": "What is the parliament of Afghanistan known as?",
+    "options": [
+      "Shura",
+      "Majlis",
+      "Duma",
+      "Diet",
+      "Congress"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Afghanistan's parliament is known as Shura."
+  },
+  {
+    "id": "q_309",
+    "text": "'Majlis' is the name of the parliament in which two countries?",
+    "options": [
+      "Iran and Maldives",
+      "Iraq and Saudi Arabia",
+      "Pakistan and Afghanistan",
+      "India and Bangladesh",
+      "Egypt and Syria"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Iran and Maldives name their parliaments Majlis."
+  },
+  {
+    "id": "q_310",
+    "text": "What is the Parliament of Germany called?",
+    "options": [
+      "Knesset",
+      "Bundestag",
+      "Diet",
+      "Duma",
+      "Congress"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The German parliament is the Bundestag."
+  },
+  {
+    "id": "q_311",
+    "text": "'Knesset' is the parliament of which country?",
+    "options": [
+      "Germany",
+      "Iran",
+      "Israel",
+      "Egypt",
+      "Russia"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Israel's parliament is called the Knesset."
+  },
+  {
+    "id": "q_312",
+    "text": "Who designed the Old Parliament House of India?",
+    "options": [
+      "Le Corbusier",
+      "Bimal Patel",
+      "Edwin Lutyens and Herbert Baker",
+      "Charles Correa",
+      "Raj Rewal"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Old Parliament House was designed by Edwin Lutyens and Herbert Baker."
+  },
+  {
+    "id": "q_313",
+    "text": "When was the foundation stone of the Old Parliament laid?",
+    "options": [
+      "12 February 1921",
+      "26 January 1950",
+      "15 August 1947",
+      "13 December 2001",
+      "28 May 2023"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "The foundation stone of the Old Parliament was laid on 12 February 1921 by the Duke of Connaught."
+  },
+  {
+    "id": "q_314",
+    "text": "Who inaugurated the Old Parliament House in February 1927?",
+    "options": [
+      "Lord Mountbatten",
+      "Lord Irwin",
+      "Duke of Connaught",
+      "Jawaharlal Nehru",
+      "Dr. B.R. Ambedkar"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Lord Irwin inaugurated the Old Parliament House in February 1927."
+  },
+  {
+    "id": "q_315",
+    "text": "What was the shape of the Old Parliament House?",
+    "options": [
+      "Triangular",
+      "Rectangular",
+      "Circular ('O' shaped)",
+      "Hexagonal",
+      "Square"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Old Parliament House had a circular, 'O' shaped layout."
+  },
+  {
+    "id": "q_316",
+    "text": "What is the alias given to the Indian Parliament building?",
+    "options": [
+      "Heart of the Nation",
+      "Soul of India",
+      "Temple of Democracy",
+      "Palace of Laws",
+      "House of People"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "The Parliament is also famously known as the 'Heart of the Nation'."
+  },
+  {
+    "id": "q_317",
+    "text": "When did the terrorist attack on the Indian Parliament take place?",
+    "options": [
+      "13 December 2000",
+      "13 December 2001",
+      "26 November 2008",
+      "14 February 2019",
+      "9 February 2013"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The Parliament was attacked on 13 December 2001."
+  },
+  {
+    "id": "q_318",
+    "text": "Who is the principal architect of the New Parliament House?",
+    "options": [
+      "Herbert Baker",
+      "Edwin Lutyens",
+      "Bimal Patel",
+      "Charles Correa",
+      "Hafeez Contractor"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Bimal Patel is the architect of the New Parliament House under the Central Vista Project."
+  },
+  {
+    "id": "q_319",
+    "text": "What is the shape of the New Parliament House?",
+    "options": [
+      "Circular",
+      "Hexagonal",
+      "Triangular",
+      "Rectangular",
+      "Octagonal"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The New Parliament House has a triangular shape."
+  },
+  {
+    "id": "q_320",
+    "text": "How many members can the Lok Sabha hall of the New Parliament accommodate?",
+    "options": [
+      "545 members",
+      "552 members",
+      "888 members",
+      "1272 members",
+      "384 members"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Lok Sabha hall in the new building can seat 888 members."
+  },
+  {
+    "id": "q_321",
+    "text": "What is the theme of the Lok Sabha hall in the New Parliament?",
+    "options": [
+      "Lotus",
+      "Banyan Tree",
+      "Peacock",
+      "Tiger",
+      "Elephant"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Lok Sabha hall features a Peacock theme (National Bird)."
+  },
+  {
+    "id": "q_322",
+    "text": "What is the theme of the Rajya Sabha hall in the New Parliament?",
+    "options": [
+      "Peacock",
+      "Lotus",
+      "Rose",
+      "Banyan Tree",
+      "Tiger"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The Rajya Sabha hall features a Lotus theme (National Flower)."
+  },
+  {
+    "id": "q_323",
+    "text": "Where are joint sessions of the Parliament held in the New Parliament?",
+    "options": [
+      "Central Hall",
+      "Lok Sabha Hall",
+      "Rajya Sabha Hall",
+      "Library Hall",
+      "Courtyard"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Joint sessions are now held in the Lok Sabha Hall, which can expand to fit 1272 members."
+  },
+  {
+    "id": "q_324",
+    "text": "What is the 'Sengol' installed near the Lok Sabha Speaker's chair?",
+    "options": [
+      "A historical religious text",
+      "A symbol of righteousness and justice",
+      "A portrait of Mahatma Gandhi",
+      "A flag of the constitution",
+      "An ancient sword"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The Sengol is a symbol of righteousness or new justice, derived from the Tamil word 'Semmai'."
+  }
+]

@@ -20,6 +20,7 @@ const schema = defineSchema({
     totalQuestions: v.number(),
     timeSpent: v.number(),
     completedAt: v.number(),
+    userAnswers: v.optional(v.array(v.number())), // Optional array of numbers storing answers
   }).index("by_user", ["userId"]),
 
   studyGroups: defineTable({

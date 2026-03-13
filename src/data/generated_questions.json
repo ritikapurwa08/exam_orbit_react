@@ -1,0 +1,1328 @@
+{
+  "example_subject": {
+    "example_topic": [
+      {
+        "id": "q1",
+        "text": "Example question?",
+        "options": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "Because A is correct."
+      }
+    ]
+  },
+  "indian_polity": {
+    "constitutional_posts": [
+      {
+        "id": "q_200",
+        "text": "Which Articles deal with the Comptroller and Auditor General (CAG) of India?",
+        "options": [
+          "79 to 123",
+          "124 to 147",
+          "148 to 151",
+          "152 to 237",
+          "52 to 78"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The CAG is mentioned in Articles 148 to 151."
+      },
+      {
+        "id": "q_201",
+        "text": "Who is the current Comptroller and Auditor General (CAG) of India?",
+        "options": [
+          "Tushar Mehta",
+          "R. Venkataramani",
+          "Girish Chandra Murmu",
+          "Rajiv Mehrishi",
+          "Shashi Kant Sharma"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Girish Chandra Murmu is the current CAG of India."
+      },
+      {
+        "id": "q_202",
+        "text": "Who acts as the highest law officer of the Government of India?",
+        "options": [
+          "Chief Justice of India",
+          "Solicitor General",
+          "Attorney General",
+          "Law Minister",
+          "Advocate General"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Attorney General (Mahanayavadi) is the highest law officer of the Government of India."
+      },
+      {
+        "id": "q_203",
+        "text": "Who is the current Attorney General of India?",
+        "options": [
+          "K.K. Venugopal",
+          "Mukul Rohatgi",
+          "R. Venkataramani",
+          "Tushar Mehta",
+          "Harish Salve"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "R. Venkataramani is serving as the current Attorney General of India."
+      },
+      {
+        "id": "q_204",
+        "text": "What is the role of the Solicitor General of India?",
+        "options": [
+          "Head of Supreme Court",
+          "Highest Law Officer of India",
+          "Subordinate to Attorney General",
+          "Head of State Law",
+          "Auditor of Government Accounts"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Solicitor General assists and is subordinate to the Attorney General."
+      },
+      {
+        "id": "q_205",
+        "text": "Who is the current Solicitor General of India?",
+        "options": [
+          "Tushar Mehta",
+          "R. Venkataramani",
+          "Ranjan Gogoi",
+          "Rajendra Prasad",
+          "D.Y. Chandrachud"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "Tushar Mehta is currently the Solicitor General of India."
+      },
+      {
+        "id": "q_206",
+        "text": "The position equivalent to Attorney General at the State level is?",
+        "options": [
+          "Solicitor General",
+          "Chief Justice of High Court",
+          "Advocate General",
+          "State Law Minister",
+          "Legal Advisor"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Advocate General is the highest law officer at the State level, akin to the AG at the Center."
+      },
+      {
+        "id": "q_207",
+        "text": "Who is the current Advocate General of Rajasthan?",
+        "options": [
+          "Rajendra Prasad (Gupta)",
+          "Tushar Mehta",
+          "R. Venkataramani",
+          "Ashok Gehlot",
+          "Sachin Pilot"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "Rajendra Prasad (Gupta) is the current Advocate General of Rajasthan."
+      },
+      {
+        "id": "q_208",
+        "text": "Which post is covered by Articles 148 to 151?",
+        "options": [
+          "Attorney General",
+          "Advocate General",
+          "Prime Minister",
+          "Comptroller and Auditor General",
+          "Vice President"
+        ],
+        "correctAnswerIndex": 3,
+        "explanation": "Articles 148-151 cover the Comptroller and Auditor General (CAG)."
+      },
+      {
+        "id": "q_209",
+        "text": "R. Venkataramani holds which of the following offices?",
+        "options": [
+          "CAG",
+          "Attorney General",
+          "Solicitor General",
+          "Advocate General",
+          "Chief Justice"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "R. Venkataramani is the Attorney General of India."
+      },
+      {
+        "id": "q_210",
+        "text": "Girish Chandra Murmu serves as?",
+        "options": [
+          "Election Commissioner",
+          "Attorney General",
+          "Comptroller and Auditor General",
+          "Chief Minister",
+          "Governor of Rajasthan"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Girish Chandra Murmu is the CAG of India."
+      },
+      {
+        "id": "q_211",
+        "text": "The chief function of the Solicitor General is to assist the:",
+        "options": [
+          "Chief Justice of India",
+          "President of India",
+          "Attorney General",
+          "Prime Minister",
+          "CAG"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Solicitor General assists the Attorney General in their duties."
+      },
+      {
+        "id": "q_212",
+        "text": "Which body audits the accounts of the Union and the States?",
+        "options": [
+          "Supreme Court",
+          "Election Commission",
+          "CAG",
+          "Attorney General",
+          "NITI Aayog"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The CAG audits accounts at both the Union and State levels."
+      },
+      {
+        "id": "q_213",
+        "text": "What is the Hindi term for Attorney General?",
+        "options": [
+          "Mahadhivakta",
+          "Mahanayavadi",
+          "Niyantrak",
+          "Mahalekha",
+          "Nyayadhish"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Attorney General is called 'Mahanayavadi' in Hindi."
+      },
+      {
+        "id": "q_214",
+        "text": "What is the Hindi term for Advocate General?",
+        "options": [
+          "Mahanayavadi",
+          "Mahadhivakta",
+          "Mahalekhaparikshak",
+          "Solisitar General",
+          "Nyaymurti"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Advocate General is translated as 'Mahadhivakta'."
+      },
+      {
+        "id": "q_215",
+        "text": "What is the Hindi term for Comptroller and Auditor General?",
+        "options": [
+          "Niyantrak एवं Mahadhivakta",
+          "Niyantrak एवं Mahalekha Parikshak",
+          "Mahanayavadi",
+          "Nyayadhish",
+          "Mahamantri"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "CAG is termed 'Niyantrak evam Mahalekha Parikshak'."
+      },
+      {
+        "id": "q_216",
+        "text": "Who represents the Central Government in complex legal cases in the Supreme Court primarily?",
+        "options": [
+          "Solicitor General",
+          "CAG",
+          "Advocate General",
+          "Attorney General",
+          "President"
+        ],
+        "correctAnswerIndex": 3,
+        "explanation": "The Attorney General primarily represents the Govt of India in the Supreme Court."
+      },
+      {
+        "id": "q_217",
+        "text": "Which article (though not explicitly listed in notes, fundamentally related) appoints the AG?",
+        "options": [
+          "Article 70",
+          "Article 76",
+          "Article 124",
+          "Article 148",
+          "Article 214"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Article 76, part of the Executive chunk (52-78), establishes the Attorney General."
+      },
+      {
+        "id": "q_218",
+        "text": "An Advocate General is appointed for a?",
+        "options": [
+          "Country",
+          "State",
+          "District",
+          "Mandal",
+          "Village"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "An Advocate General is appointed individually for every State."
+      },
+      {
+        "id": "q_219",
+        "text": "Rajasthan's Advocate General Rajendra Prasad (Gupta) operates primarily at?",
+        "options": [
+          "Supreme Court",
+          "Delhi High Court",
+          "Rajasthan High Court",
+          "Bombay High Court",
+          "District Court Jaipur"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "As Advocate General for Rajasthan, he represents the state in the Rajasthan High Court."
+      },
+      {
+        "id": "q_220",
+        "text": "The term 'Mahanayavadi' belongs to which constitutional post?",
+        "options": [
+          "Advocate General",
+          "CAG",
+          "Attorney General",
+          "Solicitor General",
+          "CJI"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Mahanayavadi means Attorney General."
+      },
+      {
+        "id": "q_221",
+        "text": "Who amongst the following is currently holding the second highest law officer post in India?",
+        "options": [
+          "Girish Chandra Murmu",
+          "Tushar Mehta",
+          "R. Venkataramani",
+          "Rajendra Prasad",
+          "Ivor Jennings"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Tushar Mehta is the Solicitor General, considered the second highest law officer."
+      },
+      {
+        "id": "q_222",
+        "text": "Which constitutional post evaluates public expenditure?",
+        "options": [
+          "Attorney General",
+          "Advocate General",
+          "CAG",
+          "Solicitor General",
+          "Chief Justice"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The CAG evaluates and audits public expenditure."
+      },
+      {
+        "id": "q_223",
+        "text": "Which officer's jurisdiction extends specifically across all of India regarding governmental legal advice?",
+        "options": [
+          "Advocate General",
+          "Attorney General",
+          "Chief Minister",
+          "State Law Officer",
+          "High Court Judge"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "The Attorney General advises the Union government across India."
+      },
+      {
+        "id": "q_224",
+        "text": "CAG stands for?",
+        "options": [
+          "Chief Auditor General",
+          "Comptroller and Auditor General",
+          "Central Auditing Group",
+          "Comptroller of Accounts and Government",
+          "Consolidated Auditor General"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "CAG stands for Comptroller and Auditor General."
+      }
+    ],
+    "lok_sabha": [
+      {
+        "id": "q_400",
+        "text": "Which Article of the Constitution establishes the Parliament of India?",
+        "options": [
+          "Article 78",
+          "Article 79",
+          "Article 80",
+          "Article 81",
+          "Article 82"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Article 79 outlines the constitution of Parliament."
+      },
+      {
+        "id": "q_401",
+        "text": "The Parliament of India consists of which of the following?",
+        "options": [
+          "Only Lok Sabha & Rajya Sabha",
+          "President & Prime Minister",
+          "President, Lok Sabha, and Rajya Sabha",
+          "President & Lok Sabha",
+          "Lok Sabha, Rajya Sabha, and Supreme Court"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Parliament comprises the President, the Lok Sabha, and the Rajya Sabha."
+      },
+      {
+        "id": "q_402",
+        "text": "Which committee recommended that the President be considered a part of the Parliament?",
+        "options": [
+          "Swaran Singh Committee",
+          "N. Gopalaswami Ayyangar Committee",
+          "Sarkaria Commission",
+          "Kothari Commission",
+          "Balwant Rai Mehta Committee"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "The N. Gopalaswami Ayyangar Committee recommended making the President an integral part of Parliament."
+      },
+      {
+        "id": "q_403",
+        "text": "Why is the President considered a part of the Parliament?",
+        "options": [
+          "He attends all sessions",
+          "He appoints the Prime Minister",
+          "No bill becomes a law without his assent",
+          "He makes laws directly",
+          "He is the head of the majority party"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Because no bill passed by the chambers can become law without the President's approval."
+      },
+      {
+        "id": "q_404",
+        "text": "Which Article specifically details the structure of the Lok Sabha?",
+        "options": [
+          "Article 79",
+          "Article 80",
+          "Article 81",
+          "Article 82",
+          "Article 83"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Article 81 details the composition of the Lok Sabha."
+      },
+      {
+        "id": "q_405",
+        "text": "Which of these is NOT an alternative name for the Lok Sabha?",
+        "options": [
+          "Lower House",
+          "First Chamber",
+          "Upper House",
+          "Temporary House",
+          "Popular House"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Upper House refers to the Rajya Sabha, not the Lok Sabha."
+      },
+      {
+        "id": "q_406",
+        "text": "Why is the Lok Sabha called the 'Temporary House'?",
+        "options": [
+          "It functions for only a few days a year",
+          "Its members are not elected",
+          "It can be dissolved",
+          "It does not have real power",
+          "It is housed in a temporary building"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "It is called a Temporary House because it can be dissolved by the President before its term ends."
+      },
+      {
+        "id": "q_407",
+        "text": "When was the Parliament of India first constituted after independence?",
+        "options": [
+          "January 1950",
+          "August 1947",
+          "April 1952",
+          "May 1954",
+          "December 1951"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The first Parliament was constituted in April 1952 following the first general elections."
+      },
+      {
+        "id": "q_408",
+        "text": "What was the initial English name of the Lok Sabha?",
+        "options": [
+          "House of Commons",
+          "House of People",
+          "National Assembly",
+          "First Chamber",
+          "Council of Representatives"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "It was initially named the 'House of People'."
+      },
+      {
+        "id": "q_409",
+        "text": "When was the name 'House of People' changed to 'Lok Sabha'?",
+        "options": [
+          "26 January 1950",
+          "15 August 1947",
+          "14 May 1954",
+          "1 April 1952",
+          "2 October 1955"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The name was changed to Lok Sabha on 14 May 1954."
+      },
+      {
+        "id": "q_410",
+        "text": "During the first general elections (1951-52), what was the maximum strength of the Lok Sabha?",
+        "options": [
+          "500",
+          "525",
+          "545",
+          "550",
+          "489"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "The maximum strength of the Lok Sabha during the first general elections was set at 500."
+      },
+      {
+        "id": "q_411",
+        "text": "How many seats were actually contested in the first Lok Sabha elections?",
+        "options": [
+          "401",
+          "489",
+          "500",
+          "525",
+          "545"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Elections were held for 489 seats."
+      },
+      {
+        "id": "q_412",
+        "text": "During the first general elections, how many triple-member constituencies existed?",
+        "options": [
+          "None",
+          "One",
+          "Two",
+          "Three",
+          "Ten"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "There was exactly one triple-member constituency (in North Bengal)."
+      },
+      {
+        "id": "q_413",
+        "text": "When was the multi-member constituency system abolished?",
+        "options": [
+          "1952",
+          "1956",
+          "1961",
+          "1971",
+          "1973"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The multi-member system was abolished in 1961, before the 1962 elections."
+      },
+      {
+        "id": "q_414",
+        "text": "The 7th Constitutional Amendment (1956) increased the Lok Sabha seats from 500 to?",
+        "options": [
+          "525",
+          "545",
+          "550",
+          "552",
+          "489"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "The 7th Amendment raised the max seats from 500 to 525 after state reorganization."
+      },
+      {
+        "id": "q_415",
+        "text": "The 31st Constitutional Amendment (1973) increased the seats to?",
+        "options": [
+          "525",
+          "545",
+          "550",
+          "552",
+          "560"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "The 31st Amendment increased the seats from 525 to 545."
+      },
+      {
+        "id": "q_416",
+        "text": "Which act set the maximum limit of Lok Sabha seats to 552?",
+        "options": [
+          "7th Amendment",
+          "31st Amendment",
+          "42nd Amendment",
+          "Goa, Daman and Diu Reorganisation Act (1987)",
+          "84th Amendment (2002)"
+        ],
+        "correctAnswerIndex": 3,
+        "explanation": "The Goa, Daman and Diu Reorganisation Act of 1987 set the limit at 552."
+      },
+      {
+        "id": "q_417",
+        "text": "According to the 84th Constitutional Amendment (2002), Lok Sabha seats are frozen until which year?",
+        "options": [
+          "2010",
+          "2020",
+          "2026",
+          "2030",
+          "2050"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The seats are frozen until the year 2026."
+      },
+      {
+        "id": "q_418",
+        "text": "Before the 104th Amendment, how many Anglo-Indians could the President nominate to the Lok Sabha?",
+        "options": [
+          "None",
+          "One",
+          "Two",
+          "Three",
+          "Four"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Under Article 331, the President could nominate 2 Anglo-Indians."
+      },
+      {
+        "id": "q_419",
+        "text": "Which constitutional amendment discontinued the nomination of Anglo-Indians to the Lok Sabha?",
+        "options": [
+          "84th Amendment",
+          "100th Amendment",
+          "102nd Amendment",
+          "104th Amendment",
+          "105th Amendment"
+        ],
+        "correctAnswerIndex": 3,
+        "explanation": "The 104th Constitutional Amendment (December 2019) ended the Anglo-Indian nomination."
+      },
+      {
+        "id": "q_420",
+        "text": "What is the maximum current possible strength of the Lok Sabha after the 104th Amendment?",
+        "options": [
+          "543",
+          "545",
+          "550",
+          "552",
+          "500"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The maximum strength is now 550 (552 minus the 2 Anglo-Indian seats)."
+      },
+      {
+        "id": "q_421",
+        "text": "What is the current base census year used to decide population thresholds for Lok Sabha seat distributions?",
+        "options": [
+          "1951",
+          "1971",
+          "1991",
+          "2001",
+          "2011"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "The distribution of seats is frozen based on the 1971 census until 2026."
+      },
+      {
+        "id": "q_422",
+        "text": "Who is known as the 'Popular House'?",
+        "options": [
+          "Rajya Sabha",
+          "Legislative Council",
+          "Lok Sabha",
+          "Supreme Court",
+          "President's Office"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Lok Sabha relies on direct popular election, hence it is the Popular House."
+      },
+      {
+        "id": "q_423",
+        "text": "In the 1951-52 elections, how many double-member constituencies were there?",
+        "options": [
+          "86",
+          "314",
+          "1",
+          "489",
+          "401"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "There were 86 double-member constituencies."
+      },
+      {
+        "id": "q_424",
+        "text": "How many total constituencies (electoral districts) were there in the first general elections?",
+        "options": [
+          "314",
+          "401",
+          "489",
+          "500",
+          "86"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "There were 401 constituencies (314 single, 86 double, 1 triple) yielding 489 seats."
+      }
+    ],
+    "parliament": [
+      {
+        "id": "q_300",
+        "text": "What is the nomenclature for the Legislature in India?",
+        "options": [
+          "Congress",
+          "Diet",
+          "Sansad (Parliament)",
+          "Duma",
+          "Knesset"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "In India, the Legislature is known as Sansad or Parliament."
+      },
+      {
+        "id": "q_301",
+        "text": "What is the name of the Parliament in the United States of America?",
+        "options": [
+          "Parliament",
+          "Congress",
+          "Diet",
+          "Duma",
+          "National Assembly"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "In America, the Parliament is called Congress."
+      },
+      {
+        "id": "q_302",
+        "text": "What is the name of the Parliament in Japan?",
+        "options": [
+          "Majlis",
+          "Diet",
+          "Shura",
+          "Knesset",
+          "Bundestag"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Japan's parliament is known as the Diet."
+      },
+      {
+        "id": "q_303",
+        "text": "What is the name of the Parliament in Russia?",
+        "options": [
+          "Duma",
+          "Congress",
+          "National People's Congress",
+          "Rastriya Panchayat",
+          "Jatiya Sangsad"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "The Russian Parliament is known as the Duma."
+      },
+      {
+        "id": "q_304",
+        "text": "Which country's parliament is called 'National People's Congress'?",
+        "options": [
+          "Russia",
+          "Japan",
+          "China",
+          "Pakistan",
+          "Nepal"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "China's parliament is the National People's Congress."
+      },
+      {
+        "id": "q_305",
+        "text": "What is the Parliament of Pakistan called?",
+        "options": [
+          "Majlis",
+          "Shura",
+          "National Assembly",
+          "Jatiya Sangsad",
+          "Congress"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Pakistan's parliament is known as the National Assembly."
+      },
+      {
+        "id": "q_306",
+        "text": "'Jatiya Sangsad' is the parliament of which neighboring country?",
+        "options": [
+          "Nepal",
+          "Bhutan",
+          "Bangladesh",
+          "Sri Lanka",
+          "Myanmar"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Bangladesh's parliament is called Jatiya Sangsad."
+      },
+      {
+        "id": "q_307",
+        "text": "'Rastriya Panchayat' is associated with the parliament of?",
+        "options": [
+          "Bangladesh",
+          "India",
+          "Nepal",
+          "Bhutan",
+          "Maldives"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Nepal's parliament is traditionally known as Rastriya Panchayat."
+      },
+      {
+        "id": "q_308",
+        "text": "What is the parliament of Afghanistan known as?",
+        "options": [
+          "Shura",
+          "Majlis",
+          "Duma",
+          "Diet",
+          "Congress"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "Afghanistan's parliament is known as Shura."
+      },
+      {
+        "id": "q_309",
+        "text": "'Majlis' is the name of the parliament in which two countries?",
+        "options": [
+          "Iran and Maldives",
+          "Iraq and Saudi Arabia",
+          "Pakistan and Afghanistan",
+          "India and Bangladesh",
+          "Egypt and Syria"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "Iran and Maldives name their parliaments Majlis."
+      },
+      {
+        "id": "q_310",
+        "text": "What is the Parliament of Germany called?",
+        "options": [
+          "Knesset",
+          "Bundestag",
+          "Diet",
+          "Duma",
+          "Congress"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "The German parliament is the Bundestag."
+      },
+      {
+        "id": "q_311",
+        "text": "'Knesset' is the parliament of which country?",
+        "options": [
+          "Germany",
+          "Iran",
+          "Israel",
+          "Egypt",
+          "Russia"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Israel's parliament is called the Knesset."
+      },
+      {
+        "id": "q_312",
+        "text": "Who designed the Old Parliament House of India?",
+        "options": [
+          "Le Corbusier",
+          "Bimal Patel",
+          "Edwin Lutyens and Herbert Baker",
+          "Charles Correa",
+          "Raj Rewal"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Old Parliament House was designed by Edwin Lutyens and Herbert Baker."
+      },
+      {
+        "id": "q_313",
+        "text": "When was the foundation stone of the Old Parliament laid?",
+        "options": [
+          "12 February 1921",
+          "26 January 1950",
+          "15 August 1947",
+          "13 December 2001",
+          "28 May 2023"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "The foundation stone of the Old Parliament was laid on 12 February 1921 by the Duke of Connaught."
+      },
+      {
+        "id": "q_314",
+        "text": "Who inaugurated the Old Parliament House in February 1927?",
+        "options": [
+          "Lord Mountbatten",
+          "Lord Irwin",
+          "Duke of Connaught",
+          "Jawaharlal Nehru",
+          "Dr. B.R. Ambedkar"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Lord Irwin inaugurated the Old Parliament House in February 1927."
+      },
+      {
+        "id": "q_315",
+        "text": "What was the shape of the Old Parliament House?",
+        "options": [
+          "Triangular",
+          "Rectangular",
+          "Circular ('O' shaped)",
+          "Hexagonal",
+          "Square"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Old Parliament House had a circular, 'O' shaped layout."
+      },
+      {
+        "id": "q_316",
+        "text": "What is the alias given to the Indian Parliament building?",
+        "options": [
+          "Heart of the Nation",
+          "Soul of India",
+          "Temple of Democracy",
+          "Palace of Laws",
+          "House of People"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "The Parliament is also famously known as the 'Heart of the Nation'."
+      },
+      {
+        "id": "q_317",
+        "text": "When did the terrorist attack on the Indian Parliament take place?",
+        "options": [
+          "13 December 2000",
+          "13 December 2001",
+          "26 November 2008",
+          "14 February 2019",
+          "9 February 2013"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "The Parliament was attacked on 13 December 2001."
+      },
+      {
+        "id": "q_318",
+        "text": "Who is the principal architect of the New Parliament House?",
+        "options": [
+          "Herbert Baker",
+          "Edwin Lutyens",
+          "Bimal Patel",
+          "Charles Correa",
+          "Hafeez Contractor"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Bimal Patel is the architect of the New Parliament House under the Central Vista Project."
+      },
+      {
+        "id": "q_319",
+        "text": "What is the shape of the New Parliament House?",
+        "options": [
+          "Circular",
+          "Hexagonal",
+          "Triangular",
+          "Rectangular",
+          "Octagonal"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The New Parliament House has a triangular shape."
+      },
+      {
+        "id": "q_320",
+        "text": "How many members can the Lok Sabha hall of the New Parliament accommodate?",
+        "options": [
+          "545 members",
+          "552 members",
+          "888 members",
+          "1272 members",
+          "384 members"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Lok Sabha hall in the new building can seat 888 members."
+      },
+      {
+        "id": "q_321",
+        "text": "What is the theme of the Lok Sabha hall in the New Parliament?",
+        "options": [
+          "Lotus",
+          "Banyan Tree",
+          "Peacock",
+          "Tiger",
+          "Elephant"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Lok Sabha hall features a Peacock theme (National Bird)."
+      },
+      {
+        "id": "q_322",
+        "text": "What is the theme of the Rajya Sabha hall in the New Parliament?",
+        "options": [
+          "Peacock",
+          "Lotus",
+          "Rose",
+          "Banyan Tree",
+          "Tiger"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "The Rajya Sabha hall features a Lotus theme (National Flower)."
+      },
+      {
+        "id": "q_323",
+        "text": "Where are joint sessions of the Parliament held in the New Parliament?",
+        "options": [
+          "Central Hall",
+          "Lok Sabha Hall",
+          "Rajya Sabha Hall",
+          "Library Hall",
+          "Courtyard"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Joint sessions are now held in the Lok Sabha Hall, which can expand to fit 1272 members."
+      },
+      {
+        "id": "q_324",
+        "text": "What is the 'Sengol' installed near the Lok Sabha Speaker's chair?",
+        "options": [
+          "A historical religious text",
+          "A symbol of righteousness and justice",
+          "A portrait of Mahatma Gandhi",
+          "A flag of the constitution",
+          "An ancient sword"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "The Sengol is a symbol of righteousness or new justice, derived from the Tamil word 'Semmai'."
+      }
+    ],
+    "union_executive": [
+      {
+        "id": "q_100",
+        "text": "Part V of the Indian Constitution is related to?",
+        "options": [
+          "State Government",
+          "Union Territories",
+          "The Union Government",
+          "Panchayats",
+          "Fundamental Rights"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Part V of the Constitution deals with the Union Government."
+      },
+      {
+        "id": "q_101",
+        "text": "Articles 52 to 151 of the Constitution belong to which Part?",
+        "options": [
+          "Part III",
+          "Part IV",
+          "Part V",
+          "Part VI",
+          "Part VII"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Part V of the Constitution spans from Article 52 to 151."
+      },
+      {
+        "id": "q_102",
+        "text": "Which part of the Indian Constitution is the largest?",
+        "options": [
+          "Part III",
+          "Part V",
+          "Part IX",
+          "Part XII",
+          "Part XX"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Part V is the largest part of the Indian Constitution."
+      },
+      {
+        "id": "q_103",
+        "text": "What is the primary function of the Legislature (Parliament)?",
+        "options": [
+          "Interpret laws",
+          "Implement laws",
+          "Make laws",
+          "Review judgments",
+          "Enforce order"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The main function of the Legislature is to formulate and make laws."
+      },
+      {
+        "id": "q_104",
+        "text": "What is the primary function of the Executive?",
+        "options": [
+          "Make laws",
+          "Implement laws",
+          "Interpret laws",
+          "Provide justice",
+          "None of the above"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "The Executive organ of the government is responsible for implementing laws."
+      },
+      {
+        "id": "q_105",
+        "text": "Which organ of the government is responsible for reviewing and interpreting laws?",
+        "options": [
+          "Executive",
+          "Legislature",
+          "Media",
+          "Judiciary",
+          "CAG"
+        ],
+        "correctAnswerIndex": 3,
+        "explanation": "The Judiciary interprets and reviews laws made by the Legislature."
+      },
+      {
+        "id": "q_106",
+        "text": "The Executive segment inside Part V spans from which articles?",
+        "options": [
+          "52 to 78",
+          "79 to 123",
+          "124 to 147",
+          "148 to 151",
+          "36 to 51"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "The Executive in Part V covers Articles 52 to 78."
+      },
+      {
+        "id": "q_107",
+        "text": "Which of the following is NOT a part of the Union Executive?",
+        "options": [
+          "President",
+          "Vice-President",
+          "Prime Minister",
+          "Chief Justice of India",
+          "Attorney General"
+        ],
+        "correctAnswerIndex": 3,
+        "explanation": "The Chief Justice of India is the head of the Judiciary, not the Union Executive."
+      },
+      {
+        "id": "q_108",
+        "text": "The Legislature (Parliament) in Part V is covered under which articles?",
+        "options": [
+          "52 to 78",
+          "79 to 123",
+          "124 to 147",
+          "148 to 151",
+          "152 to 237"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "The Parliament (Legislature) is described in Articles 79 to 123."
+      },
+      {
+        "id": "q_109",
+        "text": "The Union Judiciary (Supreme Court) is detailed from Articles?",
+        "options": [
+          "52 to 78",
+          "79 to 123",
+          "124 to 147",
+          "148 to 151",
+          "214 to 232"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Supreme Court falls under Articles 124 to 147 in Part V."
+      },
+      {
+        "id": "q_110",
+        "text": "How many total Parts are there originally in the Indian Constitution?",
+        "options": [
+          "18",
+          "20",
+          "22",
+          "24",
+          "25"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Indian Constitution originally consisted of 22 Parts."
+      },
+      {
+        "id": "q_111",
+        "text": "How many total Articles were there initially in the Constitution?",
+        "options": [
+          "365",
+          "375",
+          "385",
+          "395",
+          "405"
+        ],
+        "correctAnswerIndex": 3,
+        "explanation": "The Constitution originally had 395 Articles."
+      },
+      {
+        "id": "q_112",
+        "text": "Which part of the Constitution is considered the smallest?",
+        "options": [
+          "Part I",
+          "Part IV-A",
+          "Part XX",
+          "Part XXI",
+          "Part XXII"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Part XX is the smallest part of the Constitution."
+      },
+      {
+        "id": "q_113",
+        "text": "Part XX of the Indian Constitution contains how many Articles?",
+        "options": [
+          "One",
+          "Two",
+          "Three",
+          "Four",
+          "Five"
+        ],
+        "correctAnswerIndex": 0,
+        "explanation": "Part XX contains only one article, which is Article 368."
+      },
+      {
+        "id": "q_114",
+        "text": "Article 368 resides in which part of the Constitution?",
+        "options": [
+          "Part X",
+          "Part XV",
+          "Part XVIII",
+          "Part XX",
+          "Part XXII"
+        ],
+        "correctAnswerIndex": 3,
+        "explanation": "Article 368, dealing with amendments, resides in Part XX."
+      },
+      {
+        "id": "q_115",
+        "text": "Who famously referred to the Indian Constitution as 'Paradise of Lawyers'?",
+        "options": [
+          "B.R. Ambedkar",
+          "Jawaharlal Nehru",
+          "Ivor Jennings",
+          "Granville Austin",
+          "K.M. Munshi"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Ivor Jennings called the Indian Constitution a 'Paradise of Lawyers' due to its legal complexity."
+      },
+      {
+        "id": "q_116",
+        "text": "What does the term 'Paradise of Lawyers' imply?",
+        "options": [
+          "High salaries for lawyers",
+          "Simplistic language",
+          "Legalistic and complex language",
+          "Too much litigation",
+          "Lack of courts"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "It implies that the Constitution's language is highly legalistic and complex, creating a need (and paradise) for lawyers."
+      },
+      {
+        "id": "q_117",
+        "text": "Which part is the longest part in the Constitution?",
+        "options": [
+          "Part III",
+          "Part IV",
+          "Part V",
+          "Part VI",
+          "Part XI"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Part V, dealing with the Union, is the longest part of the Constitution."
+      },
+      {
+        "id": "q_118",
+        "text": "Which article begins Part V of the constitution?",
+        "options": [
+          "Article 50",
+          "Article 51",
+          "Article 52",
+          "Article 53",
+          "Article 54"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Part V begins at Article 52 with the President of India."
+      },
+      {
+        "id": "q_119",
+        "text": "Part V concludes with the provisions of which office?",
+        "options": [
+          "Supreme Court",
+          "Election Commission",
+          "Comptroller and Auditor General",
+          "Attorney General",
+          "Prime Minister"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Part V concludes with the CAG provisions (Articles 148-151)."
+      },
+      {
+        "id": "q_120",
+        "text": "Which constitutional concept interprets laws passed by the Parliament?",
+        "options": [
+          "Executive",
+          "CAG",
+          "Judiciary",
+          "Attorney General",
+          "Solicitor General"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "The Judiciary reviews and interprets the laws."
+      },
+      {
+        "id": "q_121",
+        "text": "The Union Executive includes all except?",
+        "options": [
+          "President",
+          "Vice President",
+          "Council of Ministers",
+          "CAG",
+          "Attorney General"
+        ],
+        "correctAnswerIndex": 3,
+        "explanation": "The CAG is covered in a separate chapter of Part V (Arts 148-151) and isn't part of the core executive consisting of Pres, VP, PM, Council, AG."
+      },
+      {
+        "id": "q_122",
+        "text": "Article 79 to 123 pertains primarily to?",
+        "options": [
+          "Union Executive",
+          "Parliament",
+          "Supreme Court",
+          "CAG",
+          "State Legislature"
+        ],
+        "correctAnswerIndex": 1,
+        "explanation": "Articles 79-123 belong to Chapter II of Part V, dealing with Parliament."
+      },
+      {
+        "id": "q_123",
+        "text": "Article 124 uniquely begins the chapter on?",
+        "options": [
+          "Union Executive",
+          "Union Legislature",
+          "Union Judiciary",
+          "CAG",
+          "Elections"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Article 124 establishes the Supreme Court of India."
+      },
+      {
+        "id": "q_124",
+        "text": "The quote 'Paradise of Lawyers' was made by?",
+        "options": [
+          "Dr. B.R. Ambedkar",
+          "Dr. Rajendra Prasad",
+          "Sir Ivor Jennings",
+          "Lord Mountbatten",
+          "Jawaharlal Nehru"
+        ],
+        "correctAnswerIndex": 2,
+        "explanation": "Sir Ivor Jennings coined this phrase analyzing the Indian Constitution."
+      }
+    ]
+  }
+}

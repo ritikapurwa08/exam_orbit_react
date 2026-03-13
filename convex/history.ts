@@ -26,6 +26,7 @@ export const addTestHistory = mutation({
     score: v.number(),
     totalQuestions: v.number(),
     timeSpent: v.number(),
+    userAnswers: v.optional(v.array(v.number())),
   },
   handler: async (ctx, args) => {
     const userId = await getAuthUserId(ctx);
@@ -39,6 +40,7 @@ export const addTestHistory = mutation({
       totalQuestions: args.totalQuestions,
       timeSpent: args.timeSpent,
       completedAt: Date.now(),
+      userAnswers: args.userAnswers,
     });
   },
 });

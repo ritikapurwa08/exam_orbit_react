@@ -1,0 +1,327 @@
+[
+  {
+    "id": "q_400",
+    "text": "Which Article of the Constitution establishes the Parliament of India?",
+    "options": [
+      "Article 78",
+      "Article 79",
+      "Article 80",
+      "Article 81",
+      "Article 82"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Article 79 outlines the constitution of Parliament."
+  },
+  {
+    "id": "q_401",
+    "text": "The Parliament of India consists of which of the following?",
+    "options": [
+      "Only Lok Sabha & Rajya Sabha",
+      "President & Prime Minister",
+      "President, Lok Sabha, and Rajya Sabha",
+      "President & Lok Sabha",
+      "Lok Sabha, Rajya Sabha, and Supreme Court"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Parliament comprises the President, the Lok Sabha, and the Rajya Sabha."
+  },
+  {
+    "id": "q_402",
+    "text": "Which committee recommended that the President be considered a part of the Parliament?",
+    "options": [
+      "Swaran Singh Committee",
+      "N. Gopalaswami Ayyangar Committee",
+      "Sarkaria Commission",
+      "Kothari Commission",
+      "Balwant Rai Mehta Committee"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The N. Gopalaswami Ayyangar Committee recommended making the President an integral part of Parliament."
+  },
+  {
+    "id": "q_403",
+    "text": "Why is the President considered a part of the Parliament?",
+    "options": [
+      "He attends all sessions",
+      "He appoints the Prime Minister",
+      "No bill becomes a law without his assent",
+      "He makes laws directly",
+      "He is the head of the majority party"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Because no bill passed by the chambers can become law without the President's approval."
+  },
+  {
+    "id": "q_404",
+    "text": "Which Article specifically details the structure of the Lok Sabha?",
+    "options": [
+      "Article 79",
+      "Article 80",
+      "Article 81",
+      "Article 82",
+      "Article 83"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Article 81 details the composition of the Lok Sabha."
+  },
+  {
+    "id": "q_405",
+    "text": "Which of these is NOT an alternative name for the Lok Sabha?",
+    "options": [
+      "Lower House",
+      "First Chamber",
+      "Upper House",
+      "Temporary House",
+      "Popular House"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Upper House refers to the Rajya Sabha, not the Lok Sabha."
+  },
+  {
+    "id": "q_406",
+    "text": "Why is the Lok Sabha called the 'Temporary House'?",
+    "options": [
+      "It functions for only a few days a year",
+      "Its members are not elected",
+      "It can be dissolved",
+      "It does not have real power",
+      "It is housed in a temporary building"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "It is called a Temporary House because it can be dissolved by the President before its term ends."
+  },
+  {
+    "id": "q_407",
+    "text": "When was the Parliament of India first constituted after independence?",
+    "options": [
+      "January 1950",
+      "August 1947",
+      "April 1952",
+      "May 1954",
+      "December 1951"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The first Parliament was constituted in April 1952 following the first general elections."
+  },
+  {
+    "id": "q_408",
+    "text": "What was the initial English name of the Lok Sabha?",
+    "options": [
+      "House of Commons",
+      "House of People",
+      "National Assembly",
+      "First Chamber",
+      "Council of Representatives"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "It was initially named the 'House of People'."
+  },
+  {
+    "id": "q_409",
+    "text": "When was the name 'House of People' changed to 'Lok Sabha'?",
+    "options": [
+      "26 January 1950",
+      "15 August 1947",
+      "14 May 1954",
+      "1 April 1952",
+      "2 October 1955"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The name was changed to Lok Sabha on 14 May 1954."
+  },
+  {
+    "id": "q_410",
+    "text": "During the first general elections (1951-52), what was the maximum strength of the Lok Sabha?",
+    "options": [
+      "500",
+      "525",
+      "545",
+      "550",
+      "489"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "The maximum strength of the Lok Sabha during the first general elections was set at 500."
+  },
+  {
+    "id": "q_411",
+    "text": "How many seats were actually contested in the first Lok Sabha elections?",
+    "options": [
+      "401",
+      "489",
+      "500",
+      "525",
+      "545"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Elections were held for 489 seats."
+  },
+  {
+    "id": "q_412",
+    "text": "During the first general elections, how many triple-member constituencies existed?",
+    "options": [
+      "None",
+      "One",
+      "Two",
+      "Three",
+      "Ten"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "There was exactly one triple-member constituency (in North Bengal)."
+  },
+  {
+    "id": "q_413",
+    "text": "When was the multi-member constituency system abolished?",
+    "options": [
+      "1952",
+      "1956",
+      "1961",
+      "1971",
+      "1973"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The multi-member system was abolished in 1961, before the 1962 elections."
+  },
+  {
+    "id": "q_414",
+    "text": "The 7th Constitutional Amendment (1956) increased the Lok Sabha seats from 500 to?",
+    "options": [
+      "525",
+      "545",
+      "550",
+      "552",
+      "489"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "The 7th Amendment raised the max seats from 500 to 525 after state reorganization."
+  },
+  {
+    "id": "q_415",
+    "text": "The 31st Constitutional Amendment (1973) increased the seats to?",
+    "options": [
+      "525",
+      "545",
+      "550",
+      "552",
+      "560"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The 31st Amendment increased the seats from 525 to 545."
+  },
+  {
+    "id": "q_416",
+    "text": "Which act set the maximum limit of Lok Sabha seats to 552?",
+    "options": [
+      "7th Amendment",
+      "31st Amendment",
+      "42nd Amendment",
+      "Goa, Daman and Diu Reorganisation Act (1987)",
+      "84th Amendment (2002)"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "The Goa, Daman and Diu Reorganisation Act of 1987 set the limit at 552."
+  },
+  {
+    "id": "q_417",
+    "text": "According to the 84th Constitutional Amendment (2002), Lok Sabha seats are frozen until which year?",
+    "options": [
+      "2010",
+      "2020",
+      "2026",
+      "2030",
+      "2050"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The seats are frozen until the year 2026."
+  },
+  {
+    "id": "q_418",
+    "text": "Before the 104th Amendment, how many Anglo-Indians could the President nominate to the Lok Sabha?",
+    "options": [
+      "None",
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Under Article 331, the President could nominate 2 Anglo-Indians."
+  },
+  {
+    "id": "q_419",
+    "text": "Which constitutional amendment discontinued the nomination of Anglo-Indians to the Lok Sabha?",
+    "options": [
+      "84th Amendment",
+      "100th Amendment",
+      "102nd Amendment",
+      "104th Amendment",
+      "105th Amendment"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "The 104th Constitutional Amendment (December 2019) ended the Anglo-Indian nomination."
+  },
+  {
+    "id": "q_420",
+    "text": "What is the maximum current possible strength of the Lok Sabha after the 104th Amendment?",
+    "options": [
+      "543",
+      "545",
+      "550",
+      "552",
+      "500"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The maximum strength is now 550 (552 minus the 2 Anglo-Indian seats)."
+  },
+  {
+    "id": "q_421",
+    "text": "What is the current base census year used to decide population thresholds for Lok Sabha seat distributions?",
+    "options": [
+      "1951",
+      "1971",
+      "1991",
+      "2001",
+      "2011"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The distribution of seats is frozen based on the 1971 census until 2026."
+  },
+  {
+    "id": "q_422",
+    "text": "Who is known as the 'Popular House'?",
+    "options": [
+      "Rajya Sabha",
+      "Legislative Council",
+      "Lok Sabha",
+      "Supreme Court",
+      "President's Office"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Lok Sabha relies on direct popular election, hence it is the Popular House."
+  },
+  {
+    "id": "q_423",
+    "text": "In the 1951-52 elections, how many double-member constituencies were there?",
+    "options": [
+      "86",
+      "314",
+      "1",
+      "489",
+      "401"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "There were 86 double-member constituencies."
+  },
+  {
+    "id": "q_424",
+    "text": "How many total constituencies (electoral districts) were there in the first general elections?",
+    "options": [
+      "314",
+      "401",
+      "489",
+      "500",
+      "86"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "There were 401 constituencies (314 single, 86 double, 1 triple) yielding 489 seats."
+  }
+]

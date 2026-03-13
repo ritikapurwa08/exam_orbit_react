@@ -2,17 +2,7 @@ import { CenterLayout } from "../components/layout/CenterLayout";
 import { motion } from "framer-motion";
 import { Link } from "react-router";
 import { Icons } from "../components/ui/icons";
-
-const SUBJECTS = [
-  { id: "chemistry", name: "Chemistry", topics: 14, questions: 280, icon: "Science", bg: "bg-blue-50 dark:bg-blue-950/30", color: "text-blue-500" },
-  { id: "mathematics", name: "Mathematics", topics: 18, questions: 420, icon: "Calculate", bg: "bg-orange-50 dark:bg-orange-950/30", color: "text-orange-500" },
-  { id: "geography", name: "Geography", topics: 10, questions: 150, icon: "Public", bg: "bg-green-50 dark:bg-green-950/30", color: "text-green-500" },
-  { id: "physics", name: "Physics", topics: 16, questions: 340, icon: "Bolt", bg: "bg-yellow-50 dark:bg-yellow-950/30", color: "text-yellow-500" },
-  { id: "biology", name: "Biology", topics: 12, questions: 290, icon: "Biotech", bg: "bg-emerald-50 dark:bg-emerald-950/30", color: "text-emerald-500" },
-  { id: "history", name: "History", topics: 15, questions: 200, icon: "History_edu", bg: "bg-amber-50 dark:bg-amber-950/30", color: "text-amber-500" },
-  { id: "literature", name: "Literature", topics: 9, questions: 180, icon: "Menu_book", bg: "bg-purple-50 dark:bg-purple-950/30", color: "text-purple-500" },
-  { id: "computer_science", name: "Computer Science", topics: 11, questions: 250, icon: "Terminal", bg: "bg-indigo-50 dark:bg-indigo-950/30", color: "text-indigo-500" },
-];
+import { SUBJECTS } from "../data/subjects";
 
 const container = {
   hidden: { opacity: 0 },
@@ -71,9 +61,8 @@ export default function SubjectSelection() {
                 <h3 className="text-xl font-bold mb-1">{subject.name}</h3>
                 
                 <div className="mt-4 flex items-center justify-between">
-                  {/* Now displayed generically, without absolute overlap */}
                   <p className="text-sm font-medium text-muted-foreground">
-                    {subject.topics} Topics <br className="sm:hidden lg:block hidden" /><span className="sm:inline lg:hidden">•</span> {subject.questions} Questions
+                    {subject.topics.length} Topics
                   </p>
                   
                   {/* Hover Arrow Effect */}
